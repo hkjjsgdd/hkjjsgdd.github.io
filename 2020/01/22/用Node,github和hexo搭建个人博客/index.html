@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>用Node,github和hexo搭建个人博客 | zrs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  
+  <meta name="description" content="1： 下载Node.jshttp:&#x2F;&#x2F;nodejs.org&#x2F;download&#x2F;2： 下载并安装githttps:&#x2F;&#x2F;git-scm.com&#x2F;download&#x2F;win3：  去GitHub官网申请一个账号Github官网：https:&#x2F;&#x2F;github.com&#x2F; ！【你想输入的替代文字】（用Node,github和hexo搭建的个人博客&#x2F;www.jpg） 配置ssh1：https:&#x2F;&#x2F;blog.csd">
+<meta property="og:type" content="article">
+<meta property="og:title" content="用Node,github和hexo搭建个人博客">
+<meta property="og:url" content="http://yoursite.com/2020/01/22/%E7%94%A8Node,github%E5%92%8Chexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/index.html">
+<meta property="og:site_name" content="zrs">
+<meta property="og:description" content="1： 下载Node.jshttp:&#x2F;&#x2F;nodejs.org&#x2F;download&#x2F;2： 下载并安装githttps:&#x2F;&#x2F;git-scm.com&#x2F;download&#x2F;win3：  去GitHub官网申请一个账号Github官网：https:&#x2F;&#x2F;github.com&#x2F; ！【你想输入的替代文字】（用Node,github和hexo搭建的个人博客&#x2F;www.jpg） 配置ssh1：https:&#x2F;&#x2F;blog.csd">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-01-22T06:22:48.615Z">
+<meta property="article:modified_time" content="2020-01-23T08:19:42.666Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="zrs" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/images/default-avatar.jpg">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<link rel="stylesheet" href="/css/highlight.css">
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+  <div id="fullpage" class="mobile-nav-right">
+    
+      <div id="wrapper" title="图片来自网络">
+    
+    
+      <header id="header">
+  <div id="nav-toggle" class="nav-toggle"></div>
+  <div class="head-box global-width">
+    <nav class="nav-box nav-right">
+      
+        <a class="nav-item" href="/" title
+        
+        >首页</a>
+      
+        <a class="nav-item" href="/archives" title
+        
+        >归档</a>
+      
+    </nav>
+  </div>
+</header>
+      <div id="middlecontent" title class="global-width sidebar-right">
+        <section id="main"><article id="post-用Node,github和hexo搭建个人博客" class="article global-container article-type-post" itemscope itemprop="blogPost">
+  
+    <header class="article-header">
+      
+  
+    <h1 class="article-title" itemprop="name">
+      用Node,github和hexo搭建个人博客
+    </h1>
+  
+
+    </header>
+  
+  <div class="article-meta">
+    <a href="/2020/01/22/%E7%94%A8Node,github%E5%92%8Chexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="article-date">
+  <time datetime="2020-01-22T06:22:48.615Z" itemprop="datePublished">2020-01-22</time>
+</a>
+    
+    
+  </div>
+  
+    <span id="busuanzi_container_page_pv">
+      本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+    </span>
+  
+
+  <div class="article-inner">
+    
+    <div class="article-content article-content-cloud" itemprop="articleBody">
+      
+        <p>1： 下载Node.js<br><a href="http://nodejs.org/download/" target="_blank" rel="noopener">http://nodejs.org/download/</a><br>2： 下载并安装git<br><a href="https://git-scm.com/download/win" target="_blank" rel="noopener">https://git-scm.com/download/win</a><br>3：  去GitHub官网申请一个账号<br>Github官网：<a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a></p>
+<p>！【你想输入的替代文字】（用Node,github和hexo搭建的个人博客/<a href="http://www.jpg）" target="_blank" rel="noopener">www.jpg）</a></p>
+<p>配置ssh<br>1：<a href="https://blog.csdn.net/qq_42351033/article/details/99182662（链接里面博主里讲的很清楚）" target="_blank" rel="noopener">https://blog.csdn.net/qq_42351033/article/details/99182662（链接里面博主里讲的很清楚）</a>  切记不要整条复制，把网址复制下来就可以</p>
+<p>搭建hexo<br>1：先创建一个文件夹用来装blog里的东西，再windows+s 打开命令提示符，<br>    输入以下命令：cd desktop<br>                            cd 你这个文件夹的名字<br>2：再安装hexo<br>   npm install hexo -g</p>
+<p>3：初始化<br>   在建的文件夹里右键，点git bash    在git bash 里面输入 hexo init</p>
+<p>4：生成网站<br>    在git bash 里输入  hexo generate或者hexo g<br>    最后右击你的文件夹，选择git bash<br>    输入 hexo s命令 会出现一个网站 复制粘贴打开就是一个博客了<br> （此网站只可以自己看得到}</p>
+<p>5：在GitHub网站上建立仓库<br>     名称必须是your_name.github.io   我的为：hkjjsgdd.github.io<br>     记得勾选“使用自述文件初始化此存储库”（initialize this repository with a README）  仓库英文名称（Repository ）<br>6：配置文件<br>     找到自己保存blog文件的文件夹下的  _config.yml，双击打开<br>     deploy:<br>     type: git<br>     repository: <a href="https://github.com/xxx/xxx.github.io.git" target="_blank" rel="noopener">https://github.com/xxx/xxx.github.io.git</a><br>     branch: master     （将此处修改为以上的，注意xxx为你的用户名）<br>     最后在cmd中输入<br>      git config –global user.name “yourname”<br>      git config –global user.email “youremail”</p>
+<p>终端cd到blog文件夹下执行生成静态页面命令：</p>
+<pre><code>hexo g</code></pre><p>此时若出现如下报错：</p>
+<p>ERROR Local hexo not found in ~/blog<br>ERROR Try runing: ‘npm install hexo –save’</p>
+<p>尝试执行命令：</p>
+<p>npm install hexo –save</p>
+<p>（若无报错，自行忽略此步骤）</p>
+<p>然后在当前目录下，终端输入：</p>
+<p>hexo d</p>
+<p>如果执行命令hexo d仍然报错：无法连接 git 或找不到 git，则执行如下命令来安装hexo-deployer-git：</p>
+<p>npm install hexo-deployer-git –save</p>
+<p>完成安装之后，再次执行hexo g和hexo d命令。</p>
+<p>随后按照提示，分别输入自己的 GitHub 用户名和密码，开始上传。</p>
+<p>完成上传之后，通过<a href="http://xxx.github.io/" target="_blank" rel="noopener">http://xxx.github.io/</a> (xxx换成您自己的仓库名，也就是用户名)来访问自己刚刚上传的网站。</p>
+<p>7：新建一篇文章<br>    hexo new”hkjjsgdd”<br>   hexo g -d 即可</p>
+<p>8：查找并下载你喜欢的博客主题<br>    <a href="https://hexo.io/themes/" target="_blank" rel="noopener">https://hexo.io/themes/</a>  下载的博客主题添加进保存blog文件的themes文件里，每一个主题都有自己的名字需要把该主题文件夹的名字命名为改主题的名字<br>    在git bash 上输入hexo clean ,再输入hexo g -d 即可修改主题</p>
+<p>！！！！！！！！以上操作基于github上 阿里云的还在摸索 </p>
+
+      
+    </div>
+    
+      <footer class="article-footer">
+        完
+      </footer>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  <div class="article-nav-block">
+    
+      <a href="/2020/01/23/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption"></strong>
+        <div class="article-nav-title">
+          
+            Hello World
+          
+        </div>
+      </a>
+    
+  </div>
+  <div class="article-nav-block">
+    
+  </div>
+</nav>
+
+    <link rel="stylesheet" href="/css/gitment.css"> 
+<script src="/js/gitment.js"></script>
+
+<div id="gitmentContainer"></div>
+
+<script>
+var gitment = new Gitment({
+  owner: '',
+  repo: '',
+  oauth: {
+    client_id: '',
+    client_secret: '',
+  },
+})
+gitment.render('gitmentContainer')
+</script>
+
+  
+  
+</article>
+</section>
+        <aside id="sidebar">
+  
+    <div class="widget-box">
+  <div class="avatar-box">
+    <img class="avatar" src="/images/default-avatar.jpg" title="图片来自网络"></img>
+    <h3 class="avatar-name">
+      
+        欧阳雨筠
+      
+    </h3>
+    <p class="avatar-slogan">
+      杨花落尽子规啼              闻道龙标过五溪              我寄愁心与明月              随风直到夜郎西
+    </p>
+  </div>
+</div>
+
+
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-box">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">一月 2020</a></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-box">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/01/23/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2020/01/22/%E7%94%A8Node,github%E5%92%8Chexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">用Node,github和hexo搭建个人博客</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+      <div class="widget-box">
+    <h3 class="widget-title">友链</h3>
+    <div class="widget">
+      
+        <a style="display: block;" href="https://yiluyanxia.github.io/" title target='_blank'
+        >一路眼瞎</a>
+      
+    </div>
+  </div>
+
+  
+</aside>
+      </div>
+      <footer id="footer">
+  <div class="foot-box global-width">
+    &copy; 2020 John Doe &nbsp;&nbsp;
+    驱动于 <a href="http://hexo.io/" target="_blank">Hexo</a>
+    &nbsp;|&nbsp;主题 <a href="https://github.com/yiluyanxia/hexo-theme-antiquity" target="_blank" rel="noopener">antiquity</a>
+    <br>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span id="busuanzi_container_site_pv">不蒜子告之   阁下是第<span id="busuanzi_value_site_pv"></span>个访客</span>
+  </div>
+</footer>
+      <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+<script>
+if (!window.jQuery) {
+var script = document.createElement('script');
+script.src = "/js/jquery-2.0.3.min.js";
+document.body.write(script);
+}
+</script>
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+    </div>
+    <nav id="mobile-nav" class="mobile-nav-box">
+  <div class="mobile-nav-img mobile-nav-top"></div>
+  
+    <a href="/" class="mobile-nav-link">首页</a>
+  
+    <a href="/archives" class="mobile-nav-link">归档</a>
+  
+  <div class="mobile-nav-img  mobile-nav-bottom"></div>
+</nav>    
+  </div>
+</body>
+</html>
