@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-04-08T13:25:03.577Z</updated>
+  <updated>2020-04-09T13:18:00.328Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>新主题ayer和hexo官方文档</title>
+    <link href="http://yoursite.com/2020/04/09/%E6%96%B0%E4%B8%BB%E9%A2%98ayer,%E4%BB%A5%E5%8F%8Ahexo%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/"/>
+    <id>http://yoursite.com/2020/04/09/%E6%96%B0%E4%B8%BB%E9%A2%98ayer,%E4%BB%A5%E5%8F%8Ahexo%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/</id>
+    <published>2020-04-09T13:02:11.602Z</published>
+    <updated>2020-04-09T13:18:00.328Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;今天换了一个主题&lt;u&gt; ayer&lt;/u&gt;  个人挺喜欢的 一天都在报错，解决问题中，感觉收获了好多，也养成喜欢看官方文档的好习惯&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;hexo&lt;/em&gt; 官方文档 ：&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Dairy" scheme="http://yoursite.com/categories/Dairy/"/>
+    
+    
+      <category term="新主题" scheme="http://yoursite.com/tags/%E6%96%B0%E4%B8%BB%E9%A2%98/"/>
+    
+      <category term="官方文档" scheme="http://yoursite.com/tags/%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/"/>
+    
+  </entry>
   
   <entry>
     <title>Typora的用法</title>
