@@ -13,6 +13,21 @@
 ]]></content>
   </entry>
   <entry>
+    <title>css 选择符</title>
+    <url>/2020/01/29/css%20%E9%80%89%E6%8B%A9%E7%AC%A6/</url>
+    <content><![CDATA[<p>伪类选择符</p>
+<p>伪类选择符，为什么叫做伪类选择符，它允许给html不存在的标签（标签的某种状态）设置样式，、<br>比如说我们给html中一个标签元素的鼠标滑过的状态来设置字体颜色：</p>
+<p>a:hover{color:red;}<br>上面一行代码就是为 a 标签鼠标滑过的状态设置字体颜色变红。这样就会使第一段文字内容中的“胆小如鼠”文字加入鼠标滑过字体颜色变为红色特效。</p>
+<p>分组选择符<br>当你想为html中多个标签元素设置同一个样式时，可以使用分组选择符（，），<br>如下代码为右侧代码编辑器中的h1、span标签同时设置字体颜色为红色：</p>
+<p>h1,span{color:red;}<br>它相当于下面两行代码：</p>
+<p>h1{color:red;}<br>span{color:red;}</p>
+<p>p{border:1px solid red;}加边框</p>
+<p>特殊性：<br>权值高就是用哪种css样式<br>下面是权值的规则：</p>
+<p>标签的权值为1，类选择符的权值为10，ID选择符的权值最高为100。例如下面的代码：</p>
+<p>p{color:red;} /<em>权值为1</em>/<br>p span{color:green;} /<em>权值为1+1=2</em>/<br>.warning{color:white;} /<em>权值为10</em>/<br>p span.warning{color:purple;} /<em>权值为1+1+10=12</em>/<br>#footer .note p{color:yellow;} /<em>权值为100+10+1=111</em>/<br>注意：还有一个权值比较特殊–继承也有权值但很低，有的文献提出它只有0.1，所以可以理解为继承的权值最低。</p>
+]]></content>
+  </entry>
+  <entry>
     <title>css （选择器）</title>
     <url>/2020/01/28/css%20%EF%BC%88%E9%80%89%E6%8B%A9%E5%99%A8%EF%BC%89/</url>
     <content><![CDATA[<p>p{<br>   font-size:12px;<br>   color:red;<br>   font-weight:bold;<br>}</p>
@@ -33,21 +48,6 @@
 <p>通用选择器</p>
 <p>通用选择器是功能最强大的选择器，它使用一个（*）号指定，<br>它的作用是匹配html中所有标签元素，如下使用下面代码使用html中任意标签元素字体颜色全部设置为红色：</p>
 <p>（）{color:red;}</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>css 选择符</title>
-    <url>/2020/01/29/css%20%E9%80%89%E6%8B%A9%E7%AC%A6/</url>
-    <content><![CDATA[<p>伪类选择符</p>
-<p>伪类选择符，为什么叫做伪类选择符，它允许给html不存在的标签（标签的某种状态）设置样式，、<br>比如说我们给html中一个标签元素的鼠标滑过的状态来设置字体颜色：</p>
-<p>a:hover{color:red;}<br>上面一行代码就是为 a 标签鼠标滑过的状态设置字体颜色变红。这样就会使第一段文字内容中的“胆小如鼠”文字加入鼠标滑过字体颜色变为红色特效。</p>
-<p>分组选择符<br>当你想为html中多个标签元素设置同一个样式时，可以使用分组选择符（，），<br>如下代码为右侧代码编辑器中的h1、span标签同时设置字体颜色为红色：</p>
-<p>h1,span{color:red;}<br>它相当于下面两行代码：</p>
-<p>h1{color:red;}<br>span{color:red;}</p>
-<p>p{border:1px solid red;}加边框</p>
-<p>特殊性：<br>权值高就是用哪种css样式<br>下面是权值的规则：</p>
-<p>标签的权值为1，类选择符的权值为10，ID选择符的权值最高为100。例如下面的代码：</p>
-<p>p{color:red;} /<em>权值为1</em>/<br>p span{color:green;} /<em>权值为1+1=2</em>/<br>.warning{color:white;} /<em>权值为10</em>/<br>p span.warning{color:purple;} /<em>权值为1+1+10=12</em>/<br>#footer .note p{color:yellow;} /<em>权值为100+10+1=111</em>/<br>注意：还有一个权值比较特殊–继承也有权值但很低，有的文献提出它只有0.1，所以可以理解为继承的权值最低。</p>
 ]]></content>
   </entry>
   <entry>
@@ -80,24 +80,6 @@
 <p><strong>初学JavaScript第一天</strong></p>
 </li>
 </ol>
-]]></content>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2020/01/23/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 ]]></content>
   </entry>
   <entry>
@@ -144,6 +126,24 @@
 <p>7：新建一篇文章<br>    hexo new”hkjjsgdd”<br>   hexo g -d 即可</p>
 <p>8：查找并下载你喜欢的博客主题<br>    <a href="https://hexo.io/themes/" target="_blank" rel="noopener">https://hexo.io/themes/</a>  下载的博客主题添加进保存blog文件的themes文件里，每一个主题都有自己的名字需要把该主题文件夹的名字命名为改主题的名字<br>    在git bash 上输入hexo clean ,再输入hexo g -d 即可修改主题</p>
 <p>！！！！！！！！以上操作基于github上 阿里云的还在摸索 </p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2020/01/23/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 ]]></content>
   </entry>
 </search>
