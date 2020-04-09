@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>捞月亮的人</title>
+  <icon>http://yoursite.com/icon.png</icon>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2020-04-08T13:25:03.577Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>ZRS</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Typora的用法</title>
+    <link href="http://yoursite.com/2020/04/08/Typora%E7%9A%84%E7%94%A8%E6%B3%95/"/>
+    <id>http://yoursite.com/2020/04/08/Typora%E7%9A%84%E7%94%A8%E6%B3%95/</id>
+    <published>2020-04-08T13:25:03.337Z</published>
+    <updated>2020-04-08T13:25:03.577Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;a href=&quot;https://lyc-rabbit.github.io/2020/01/27/typora基础使用方法/&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>javascript输出内容（四种）</title>
+    <link href="http://yoursite.com/2020/04/08/javascript%E8%BE%93%E5%87%BA%E5%86%85%E5%AE%B9%EF%BC%88%E5%9B%9B%E7%A7%8D%EF%BC%89/"/>
+    <id>http://yoursite.com/2020/04/08/javascript%E8%BE%93%E5%87%BA%E5%86%85%E5%AE%B9%EF%BC%88%E5%9B%9B%E7%A7%8D%EF%BC%89/</id>
+    <published>2020-04-08T13:18:17.981Z</published>
+    <updated>2020-04-08T14:18:20.208Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ol&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;&lt;/code&gt;/##输出内容用“”括起，直接输出“”内的内容&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;​           
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>2020战胜疫情</title>
+    <link href="http://yoursite.com/2020/03/09/2020%E6%88%98%E8%83%9C%E7%96%AB%E6%83%85/"/>
+    <id>http://yoursite.com/2020/03/09/2020%E6%88%98%E8%83%9C%E7%96%AB%E6%83%85/</id>
+    <published>2020-03-09T03:50:01.980Z</published>
+    <updated>2020-03-09T03:50:02.128Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;2020
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>vs code 的常用快捷键列表</title>
+    <link href="http://yoursite.com/2020/02/06/vs%20code%20%E7%9A%84%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%88%97%E8%A1%A8/"/>
+    <id>http://yoursite.com/2020/02/06/vs%20code%20%E7%9A%84%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%88%97%E8%A1%A8/</id>
+    <published>2020-02-06T14:49:29.090Z</published>
+    <updated>2020-02-06T14:49:29.490Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;一、vs code 的常用快捷键列表&lt;br&gt;1、注释：&lt;br&gt;a) 单行注释：[ctrl+k,ctrl+c] 或 ctrl+/&lt;br&gt;b) 取消单行注释：[ctrl+k,ctrl+u] (按下ctrl不放，再按k + u)&lt;br&gt;c)
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>css 选择符</title>
+    <link href="http://yoursite.com/2020/01/29/css%20%E9%80%89%E6%8B%A9%E7%AC%A6/"/>
+    <id>http://yoursite.com/2020/01/29/css%20%E9%80%89%E6%8B%A9%E7%AC%A6/</id>
+    <published>2020-01-29T05:46:33.453Z</published>
+    <updated>2020-01-29T05:46:33.966Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;伪类选择符&lt;/p&gt;
+&lt;p&gt;伪类选择符，为什么叫做伪类选择符，它允许给html不存在的标签（标签的某种状态）设置样式，、&lt;br&gt;比如说我们给html中一个标签元素的鼠标滑过的状态来设置字体颜色：&lt;/p&gt;
+&lt;p&gt;a:hover{color:red;}&lt;br&gt;上面一行代码就是为
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>css （选择器）</title>
+    <link href="http://yoursite.com/2020/01/28/css%20%EF%BC%88%E9%80%89%E6%8B%A9%E5%99%A8%EF%BC%89/"/>
+    <id>http://yoursite.com/2020/01/28/css%20%EF%BC%88%E9%80%89%E6%8B%A9%E5%99%A8%EF%BC%89/</id>
+    <published>2020-01-28T15:40:44.362Z</published>
+    <updated>2020-01-28T15:40:44.718Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;p{&lt;br&gt;   font-size:12px;&lt;br&gt;   color:red;&lt;br&gt;  
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>新年第一篇博客（HTML5标签）</title>
+    <link href="http://yoursite.com/2020/01/25/%E6%96%B0%E5%B9%B4%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%EF%BC%88HTML5%E6%A0%87%E7%AD%BE%EF%BC%89/"/>
+    <id>http://yoursite.com/2020/01/25/%E6%96%B0%E5%B9%B4%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%EF%BC%88HTML5%E6%A0%87%E7%AD%BE%EF%BC%89/</id>
+    <published>2020-01-25T04:18:29.151Z</published>
+    <updated>2020-01-25T04:28:47.793Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;HTML5标签(以下标签需加单方括号)&lt;/p&gt;
+&lt;p&gt;html     /html    （根标签）    所有网页标签都在 此标签之中&lt;/p&gt;
+&lt;p&gt;head     /head （定义文档的头部）               body  /body
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2020/01/23/hello-world/"/>
+    <id>http://yoursite.com/2020/01/23/hello-world/</id>
+    <published>2020-01-23T14:54:38.911Z</published>
+    <updated>2020-01-23T14:54:38.911Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>用Node,github和hexo搭建个人博客</title>
+    <link href="http://yoursite.com/2020/01/22/%E7%94%A8Node,github%E5%92%8Chexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://yoursite.com/2020/01/22/%E7%94%A8Node,github%E5%92%8Chexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
+    <published>2020-01-22T06:22:48.615Z</published>
+    <updated>2020-01-23T08:19:42.666Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;1： 下载Node.js&lt;br&gt;&lt;a href=&quot;http://nodejs.org/download/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://nodejs.org/download/&lt;/a&gt;&lt;br&gt;2：
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>
