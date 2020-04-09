@@ -1,9 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>2020战胜疫情</title>
+    <url>/2020/03/09/2020%E6%88%98%E8%83%9C%E7%96%AB%E6%83%85/</url>
+    <content><![CDATA[<p>2020 中国迎来了新型冠状病毒，希望武汉，中国以及世界都可以尽快渡过难关，我想上课了！</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>css 选择符</title>
+    <url>/2020/01/29/css%20%E9%80%89%E6%8B%A9%E7%AC%A6/</url>
+    <content><![CDATA[<p>伪类选择符</p>
+<p>伪类选择符，为什么叫做伪类选择符，它允许给html不存在的标签（标签的某种状态）设置样式，、<br>比如说我们给html中一个标签元素的鼠标滑过的状态来设置字体颜色：</p>
+<p>a:hover{color:red;}<br>上面一行代码就是为 a 标签鼠标滑过的状态设置字体颜色变红。这样就会使第一段文字内容中的“胆小如鼠”文字加入鼠标滑过字体颜色变为红色特效。</p>
+<p>分组选择符<br>当你想为html中多个标签元素设置同一个样式时，可以使用分组选择符（，），<br>如下代码为右侧代码编辑器中的h1、span标签同时设置字体颜色为红色：</p>
+<p>h1,span{color:red;}<br>它相当于下面两行代码：</p>
+<p>h1{color:red;}<br>span{color:red;}</p>
+<p>p{border:1px solid red;}加边框</p>
+<p>特殊性：<br>权值高就是用哪种css样式<br>下面是权值的规则：</p>
+<p>标签的权值为1，类选择符的权值为10，ID选择符的权值最高为100。例如下面的代码：</p>
+<p>p{color:red;} /<em>权值为1</em>/<br>p span{color:green;} /<em>权值为1+1=2</em>/<br>.warning{color:white;} /<em>权值为10</em>/<br>p span.warning{color:purple;} /<em>权值为1+1+10=12</em>/<br>#footer .note p{color:yellow;} /<em>权值为100+10+1=111</em>/<br>注意：还有一个权值比较特殊–继承也有权值但很低，有的文献提出它只有0.1，所以可以理解为继承的权值最低。</p>
+]]></content>
+  </entry>
+  <entry>
     <title>Typora的用法</title>
     <url>/2020/04/08/Typora%E7%9A%84%E7%94%A8%E6%B3%95/</url>
     <content><![CDATA[<p><a href="https://lyc-rabbit.github.io/2020/01/27/typora基础使用方法/" target="_blank" rel="noopener">https://lyc-rabbit.github.io/2020/01/27/typora%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</a>  Typora的用法 转载自钰兔大王的世界</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2020/01/23/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>css （选择器）</title>
+    <url>/2020/01/28/css%20%EF%BC%88%E9%80%89%E6%8B%A9%E5%99%A8%EF%BC%89/</url>
+    <content><![CDATA[<p>p{<br>   font-size:12px;<br>   color:red;<br>   font-weight:bold;<br>}</p>
+<p>类选择器</p>
+<p>1、英文圆点开头</p>
+<p>2、其中类选器名称可以任意起名（但不要起中文噢）</p>
+<p>使用方法：</p>
+<p>第一步：使用合适的标签把要修饰的内容标记起来，如下：</p>
+<p><span>胆小如鼠</span><br>第二步：使用class=”类选择器名称”为标签设置一个类，如下：</p>
+<p><span class="stress">胆小如鼠</span><br>第三步：设置类选器css样式，如下：</p>
+<p>.stress{color:red;}/<em>类前面要加入一个英文圆点</em>/</p>
+<p>ID选择器</p>
+<p>#setGreen{<br>   color:green;<br>}</p>
+<p><span id="setGreen">公开课</span></p>
+<p>子选择器<br>.food&gt;li{border:1px solid red;}   即大于符号&gt;</p>
+<p>后代选择器<br>.first  span{color:red;}</p>
+<p>子选择器和后代选择器的区别就是   &gt;作用于元素的第一代后，空格作用于元素的所有后代</p>
+<p>通用选择器</p>
+<p>通用选择器是功能最强大的选择器，它使用一个（*）号指定，<br>它的作用是匹配html中所有标签元素，如下使用下面代码使用html中任意标签元素字体颜色全部设置为红色：</p>
+<p>（）{color:red;}</p>
 ]]></content>
   </entry>
   <entry>
@@ -39,53 +101,9 @@
 ]]></content>
   </entry>
   <entry>
-    <title>2020战胜疫情</title>
-    <url>/2020/03/09/2020%E6%88%98%E8%83%9C%E7%96%AB%E6%83%85/</url>
-    <content><![CDATA[<p>2020 中国迎来了新型冠状病毒，希望武汉，中国以及世界都可以尽快渡过难关，我想上课了！</p>
-]]></content>
-  </entry>
-  <entry>
     <title>vs code 的常用快捷键列表</title>
     <url>/2020/02/06/vs%20code%20%E7%9A%84%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%88%97%E8%A1%A8/</url>
     <content><![CDATA[<p>一、vs code 的常用快捷键列表<br>1、注释：<br>a) 单行注释：[ctrl+k,ctrl+c] 或 ctrl+/<br>b) 取消单行注释：[ctrl+k,ctrl+u] (按下ctrl不放，再按k + u)<br>c) 多行注释：[alt+shift+A]<br>d) 多行注释：/**<br>2、移动行：alt+up/down<br>3、显示/隐藏左侧目录栏 ctrl + b<br>4、复制当前行：shift + alt +up/down<br>5、删除当前行：shift + ctrl + k<br>6、控制台终端显示与隐藏：ctrl + ~<br>7、查找文件/安装vs code 插件地址：ctrl + p<br>8、代码格式化：shift + alt +f<br>9、新建一个窗口: ctrl + shift + n<br>10、行增加缩进: ctrl + [<br>11、行减少缩进: ctrl + ]<br>12、裁剪尾随空格(去掉一行的末尾那些没用的空格) : ctrl + shift + x<br>13、字体放大/缩小: ctrl + ( + 或 - )<br>14、拆分编辑器 :ctrl + 1/2/3<br>15、切换窗口:  ctrl + shift + left/right<br>16、关闭编辑器窗口:  ctrl + w<br>17、关闭所有窗口 : ctrl + k + w<br>18、切换全屏 :F11<br>19、自动换行:  alt + z<br>20、显示git:   ctrl + shift + g<br>21、全局查找文件：ctrl + p<br>22、显示相关插件的命令(如：git log)：ctrl + shift + p<br>23、选中文字：shift + left / right / up / down<br>24、折叠代码： ctrl + k + 0-9 (0是完全折叠)<br>25、展开代码： ctrl + k + j (完全展开代码)<br>26、删除行 ： ctrl + shift + k<br>27、快速切换主题：ctrl + k / ctrl + t<br>28、快速回到顶部 ： ctrl + home<br>29、快速回到底部 : ctrl + end<br>30、格式化选定代码 ：ctrl + k / ctrl +f<br>31、选中代码 ： shift + 鼠标左键<br>32、多行同时添加内容（光标） ：ctrl + alt + up/down<br>33、全局替换：ctrl + shift + h<br>34、当前文件替换：ctrl + h<br>35、打开最近打开的文件：ctrl + r<br>36、打开新的命令窗：ctrl + shift + c<br>二、vs code 的常用插件<br>1、Auto Rename Tag 修改html标签，自动帮你完成尾部闭合标签的同步修改，和webstorm一样。<br>2、Auto Close Tag 自动闭合HTML标签<br>4、Beautiful 格式化代码的工具<br>5、Dash Dash是MacOS的API文档浏览器和代码段管理器<br>6、Ejs Snippets ejs 代码提示<br>7、ESLint 检查javascript语法错误与提示<br>8、File Navigator 快速查找文件<br>9、Git History(git log)查看git log<br>10、Gulp Snippets 写gulp时用到，gulp语法提示。<br>11、HTML CSS Support  在HTML标签上写class智能提示当前项目所支持的样式<br>12、HTML Snippets 超级好用且初级的H5代码片段以及提示<br>13、Debug for Chrome让vs code映射chrome的debug功能，静态页面都可以用vscode来打断点调试、配饰稍微复杂一点<br>14、Document this Js的注释模板<br>15、jQuery Code Snippets jquery提示工具<br>16、Html2jade html模板转pug模板<br>17、JS-CSS-HTML Formatter 格式化<br>18、Npm intellisense require 时的包提示工具<br>19、Open in browser 打开默认浏览器<br>20、One Dark Theme 一个vs code的主题<br>21、Path Intellisense 自动路径补全、默认不带这个功能<br>22、Project Manager多个项目之间快速切换的工具<br>23、Pug(Jade) snippets pug语法提示<br>24、React Components 根据文件名创建反应组件代码。<br>25、React Native Tools reactNative工具类为React Native项目提供了开发环境。<br>26、Stylelintcss/sass代码审查<br>27、Typings auto installer 安装vscode 的代码提示依赖库，基于typtings的<br>28、View In Browser 默认浏览器查看HTML文件（快捷键Ctrl+F1可以修改）<br>29、Vscode-icons 让vscode资源目录加上图标、必备<br>30、VueHelper Vue2代码段（包括Vue2 api、vue-router2、vuex2）<br>31、Vue 2 Snippets vue必备vue代码提示<br>32、Vue-color vue语法高亮主题<br>33、Auto-Open Markdown Preview markdown文件自动开启预览<br>34、EverMonkey 印象笔记<br>35、atom one dark atom的一个高亮主题(个人推荐)<br>三、常用的电脑快捷键<br>1、ctrl + shift + delete 快速清除浏览器缓存<br>2、ctrl + alt + delete 快速进入任务管理器页面<br>3、window + L  快速锁定电脑<br>4、window + d  所有窗口最小化<br>5、 window + e  打开我的资源管理器(我的电脑)<br>6、 window + f  快速打开搜索窗口<br>7、 alt + tab快速查看打开的应用与窗口</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>css 选择符</title>
-    <url>/2020/01/29/css%20%E9%80%89%E6%8B%A9%E7%AC%A6/</url>
-    <content><![CDATA[<p>伪类选择符</p>
-<p>伪类选择符，为什么叫做伪类选择符，它允许给html不存在的标签（标签的某种状态）设置样式，、<br>比如说我们给html中一个标签元素的鼠标滑过的状态来设置字体颜色：</p>
-<p>a:hover{color:red;}<br>上面一行代码就是为 a 标签鼠标滑过的状态设置字体颜色变红。这样就会使第一段文字内容中的“胆小如鼠”文字加入鼠标滑过字体颜色变为红色特效。</p>
-<p>分组选择符<br>当你想为html中多个标签元素设置同一个样式时，可以使用分组选择符（，），<br>如下代码为右侧代码编辑器中的h1、span标签同时设置字体颜色为红色：</p>
-<p>h1,span{color:red;}<br>它相当于下面两行代码：</p>
-<p>h1{color:red;}<br>span{color:red;}</p>
-<p>p{border:1px solid red;}加边框</p>
-<p>特殊性：<br>权值高就是用哪种css样式<br>下面是权值的规则：</p>
-<p>标签的权值为1，类选择符的权值为10，ID选择符的权值最高为100。例如下面的代码：</p>
-<p>p{color:red;} /<em>权值为1</em>/<br>p span{color:green;} /<em>权值为1+1=2</em>/<br>.warning{color:white;} /<em>权值为10</em>/<br>p span.warning{color:purple;} /<em>权值为1+1+10=12</em>/<br>#footer .note p{color:yellow;} /<em>权值为100+10+1=111</em>/<br>注意：还有一个权值比较特殊–继承也有权值但很低，有的文献提出它只有0.1，所以可以理解为继承的权值最低。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>css （选择器）</title>
-    <url>/2020/01/28/css%20%EF%BC%88%E9%80%89%E6%8B%A9%E5%99%A8%EF%BC%89/</url>
-    <content><![CDATA[<p>p{<br>   font-size:12px;<br>   color:red;<br>   font-weight:bold;<br>}</p>
-<p>类选择器</p>
-<p>1、英文圆点开头</p>
-<p>2、其中类选器名称可以任意起名（但不要起中文噢）</p>
-<p>使用方法：</p>
-<p>第一步：使用合适的标签把要修饰的内容标记起来，如下：</p>
-<p><span>胆小如鼠</span><br>第二步：使用class=”类选择器名称”为标签设置一个类，如下：</p>
-<p><span class="stress">胆小如鼠</span><br>第三步：设置类选器css样式，如下：</p>
-<p>.stress{color:red;}/<em>类前面要加入一个英文圆点</em>/</p>
-<p>ID选择器</p>
-<p>#setGreen{<br>   color:green;<br>}</p>
-<p><span id="setGreen">公开课</span></p>
-<p>子选择器<br>.food&gt;li{border:1px solid red;}   即大于符号&gt;</p>
-<p>后代选择器<br>.first  span{color:red;}</p>
-<p>子选择器和后代选择器的区别就是   &gt;作用于元素的第一代后，空格作用于元素的所有后代</p>
-<p>通用选择器</p>
-<p>通用选择器是功能最强大的选择器，它使用一个（*）号指定，<br>它的作用是匹配html中所有标签元素，如下使用下面代码使用html中任意标签元素字体颜色全部设置为红色：</p>
-<p>（）{color:red;}</p>
 ]]></content>
   </entry>
   <entry>
@@ -98,24 +116,6 @@
 <p>在 title 和 /title 标签之间的文字内容是网页的标题信息，它会出现在浏览器的标题栏中。网页的title标签用于告诉用户和搜索引擎这个网页的主要内容是什么，搜索引擎可以通过网页标题，迅速的判断出网页的主题。每个网页的内容都是不同的，每个网页都应该有一个独一无二的title。</p>
 <p>!–注释文字 –    （代码注释的作用：是帮助程序员标注代码的用途，过一段时间后再看你所编写的代码，就能很快想起这段代码的用途。）</p>
 <p>制作一个简单的网页       祝大家2020鼠年快乐    鼠年到齐欢笑   送你八鼠乐逍遥：鼠你幸福，鼠你美满，鼠你健康，鼠你好看，鼠你有才，鼠你能干，鼠年好运，鼠钱没完！用此八鼠，向你拜年。祝鼠年春节快乐。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2020/01/23/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 ]]></content>
   </entry>
   <entry>
