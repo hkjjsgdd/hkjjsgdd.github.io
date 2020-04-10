@@ -146,6 +146,30 @@
   </entry>
   
   <entry>
+    <title>css（选择符）</title>
+    <link href="http://yoursite.com/2020/01/29/css%20%E9%80%89%E6%8B%A9%E7%AC%A6/"/>
+    <id>http://yoursite.com/2020/01/29/css%20%E9%80%89%E6%8B%A9%E7%AC%A6/</id>
+    <published>2020-01-29T05:46:33.453Z</published>
+    <updated>2020-04-10T04:23:58.913Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;伪类选择符&lt;/p&gt;
+&lt;p&gt;伪类选择符，为什么叫做伪类选择符，它允许给html不存在的标签（标签的某种状态）设置样式，、&lt;br&gt;比如说我们给html中一个标签元素的鼠标滑过的状态来设置字体颜色：&lt;/p&gt;
+&lt;p&gt;a:hover{color:red;}&lt;br&gt;上面一行代码就是为 a 标签鼠标滑过的状态设置字体颜色变红。这样就会使第一段文字内容中的“胆小如鼠”文字加入鼠标滑过字体颜色变为红色特效。&lt;/p&gt;
+&lt;p&gt;分组选择符&lt;br&gt;当你想为html中多个标签元素设置同一个样式时，可以使用分组选择符（，），&lt;br&gt;如下代码为右侧代码编辑器中的h1、span标签同时设置字体颜色为红色：
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="css" scheme="http://yoursite.com/tags/css/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hello World</title>
     <link href="http://yoursite.com/2020/01/23/hello-world/"/>
     <id>http://yoursite.com/2020/01/23/hello-world/</id>
