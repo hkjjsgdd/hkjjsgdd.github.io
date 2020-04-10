@@ -77,17 +77,18 @@
     <link href="http://yoursite.com/2020/04/08/javascript%E8%BE%93%E5%87%BA%E5%86%85%E5%AE%B9%EF%BC%88%E5%9B%9B%E7%A7%8D%EF%BC%89/"/>
     <id>http://yoursite.com/2020/04/08/javascript%E8%BE%93%E5%87%BA%E5%86%85%E5%AE%B9%EF%BC%88%E5%9B%9B%E7%A7%8D%EF%BC%89/</id>
     <published>2020-04-08T13:18:17.981Z</published>
-    <updated>2020-04-10T03:52:30.609Z</updated>
+    <updated>2020-04-10T03:56:10.509Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;&lt;img src=&quot;../images/javascript%E8%BE%93%E5%87%BA%E5%86%85%E5%AE%B9%EF%BC%88%E5%9B%9B%E7%A7%8D%EF%BC%89/0luplb3wr3c.jpg&quot;
-        
-      
+      &lt;p&gt;&lt;img src=&quot;../images/javascript%E8%BE%93%E5%87%BA%E5%86%85%E5%AE%B9%EF%BC%88%E5%9B%9B%E7%A7%8D%EF%BC%89/0luplb3wr3c.jpg&quot; alt=&quot;0luplb3wr3c&quot;&gt;&lt;/p&gt;
+&lt;p&gt;1.&lt;code&gt;&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;&lt;/code&gt;/##输出内容用“”括起，直接输出“”内的内容&lt;/p&gt;
+&lt;p&gt;​            &lt;code&gt;document.write(&amp;quot;I love javascript&amp;quot;);&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;​            &lt;code&gt;&amp;lt;/script&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;2.&lt;code&gt;&amp;lt;script  type=&amp;quot;text/javascript&amp;quot;&amp;gt;&lt;/code&gt;/##通过变量，输出内容&lt;/p&gt;
+&lt;p&gt;​    &lt;code&gt;var  mystr=&amp;quot;hello world!&amp;quot;;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;​    &lt;code&gt;document.write(mystr);&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;​    &lt;code&gt;&amp;lt;/script&amp;gt;&lt;/code&gt;
     
     </summary>
     
@@ -132,17 +133,11 @@
     <link href="http://yoursite.com/2020/02/06/vs%20code%20%E7%9A%84%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%88%97%E8%A1%A8/"/>
     <id>http://yoursite.com/2020/02/06/vs%20code%20%E7%9A%84%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%88%97%E8%A1%A8/</id>
     <published>2020-02-06T14:49:29.090Z</published>
-    <updated>2020-02-06T14:49:29.490Z</updated>
+    <updated>2020-04-10T03:56:37.086Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;一、vs code 的常用快捷键列表&lt;br&gt;1、注释：&lt;br&gt;a) 单行注释：[ctrl+k,ctrl+c] 或 ctrl+/&lt;br&gt;b) 取消单行注释：[ctrl+k,ctrl+u] (按下ctrl不放，再按k + u)&lt;br&gt;c)
-        
-      
+      &lt;p&gt;一、vs code 的常用快捷键列表&lt;br&gt;1、注释：&lt;br&gt;a) 单行注释：[ctrl+k,ctrl+c] 或 ctrl+/&lt;br&gt;b) 取消单行注释：[ctrl+k,ctrl+u] (按下ctrl不放，再按k + u)&lt;br&gt;c) 多行注释：[alt+shift+A]&lt;br&gt;d) 多行注释：/**&lt;br&gt;2、移动行：alt+up/down&lt;br&gt;3、显示/隐藏左侧目录栏 ctrl + b&lt;br&gt;4、复制当前行：shift + alt +up/down&lt;br&gt;5、删除当前行：shift + ctrl + k&lt;br&gt;6、控制台终端显示与隐藏：ctrl + ~&lt;br&gt;7、查找文件/安装vs code 插件地址：ctrl + p&lt;br&gt;8、代码格式化：shift + alt +f&lt;br&gt;9、新建一个窗口: ctrl + shift + n&lt;br&gt;10、行增加缩进: ctrl + [
     
     </summary>
     
@@ -155,19 +150,14 @@
     <link href="http://yoursite.com/2020/01/29/css%20%E9%80%89%E6%8B%A9%E7%AC%A6/"/>
     <id>http://yoursite.com/2020/01/29/css%20%E9%80%89%E6%8B%A9%E7%AC%A6/</id>
     <published>2020-01-29T05:46:33.453Z</published>
-    <updated>2020-01-29T05:46:33.966Z</updated>
+    <updated>2020-04-10T03:57:24.835Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;伪类选择符&lt;/p&gt;
+      &lt;p&gt;伪类选择符&lt;/p&gt;
 &lt;p&gt;伪类选择符，为什么叫做伪类选择符，它允许给html不存在的标签（标签的某种状态）设置样式，、&lt;br&gt;比如说我们给html中一个标签元素的鼠标滑过的状态来设置字体颜色：&lt;/p&gt;
-&lt;p&gt;a:hover{color:red;}&lt;br&gt;上面一行代码就是为
-        
-      
+&lt;p&gt;a:hover{color:red;}&lt;br&gt;上面一行代码就是为 a 标签鼠标滑过的状态设置字体颜色变红。这样就会使第一段文字内容中的“胆小如鼠”文字加入鼠标滑过字体颜色变为红色特效。&lt;/p&gt;
+&lt;p&gt;分组选择符&lt;br&gt;当你想为html中多个标签元素设置同一个样式时，可以使用分组选择符（，），&lt;br&gt;如下代码为右侧代码编辑器中的h1、span标签同时设置字体颜色为红色：
     
     </summary>
     
@@ -180,17 +170,19 @@
     <link href="http://yoursite.com/2020/01/28/css%20%EF%BC%88%E9%80%89%E6%8B%A9%E5%99%A8%EF%BC%89/"/>
     <id>http://yoursite.com/2020/01/28/css%20%EF%BC%88%E9%80%89%E6%8B%A9%E5%99%A8%EF%BC%89/</id>
     <published>2020-01-28T15:40:44.362Z</published>
-    <updated>2020-01-28T15:40:44.718Z</updated>
+    <updated>2020-04-10T03:58:00.684Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;p{&lt;br&gt;   font-size:12px;&lt;br&gt;   color:red;&lt;br&gt;  
-        
-      
+      &lt;p&gt;p{&lt;br&gt;   font-size:12px;&lt;br&gt;   color:red;&lt;br&gt;   font-weight:bold;&lt;br&gt;}&lt;/p&gt;
+&lt;p&gt;类选择器&lt;/p&gt;
+&lt;p&gt;1、英文圆点开头&lt;/p&gt;
+&lt;p&gt;2、其中类选器名称可以任意起名（但不要起中文噢）&lt;/p&gt;
+&lt;p&gt;使用方法：&lt;/p&gt;
+&lt;p&gt;第一步：使用合适的标签把要修饰的内容标记起来，如下：&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;胆小如鼠&lt;/span&gt;&lt;br&gt;第二步：使用class=”类选择器名称”为标签设置一个类，如下：&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;stress&quot;&gt;胆小如鼠&lt;/span&gt;&lt;br&gt;第三步：设置类选器css样式，如下：&lt;/p&gt;
+&lt;p&gt;.stress{color:red;}/&lt;em&gt;类前面要加入一个英文圆点&lt;/em&gt;/
     
     </summary>
     
@@ -251,17 +243,13 @@
     <link href="http://yoursite.com/2020/01/22/%E7%94%A8Node,github%E5%92%8Chexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     <id>http://yoursite.com/2020/01/22/%E7%94%A8Node,github%E5%92%8Chexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
     <published>2020-01-22T06:22:48.615Z</published>
-    <updated>2020-01-23T08:19:42.666Z</updated>
+    <updated>2020-04-10T03:57:00.281Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;1： 下载Node.js&lt;br&gt;&lt;a href=&quot;http://nodejs.org/download/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://nodejs.org/download/&lt;/a&gt;&lt;br&gt;2：
-        
-      
+      &lt;p&gt;1： 下载Node.js&lt;br&gt;&lt;a href=&quot;http://nodejs.org/download/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://nodejs.org/download/&lt;/a&gt;&lt;br&gt;2： 下载并安装git&lt;br&gt;&lt;a href=&quot;https://git-scm.com/download/win&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://git-scm.com/download/win&lt;/a&gt;&lt;br&gt;3：  去GitHub官网申请一个账号&lt;br&gt;Github官网：&lt;a href=&quot;https://github.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;！【你想输入的替代文字】（用Node,github和hexo搭建的个人博客/&lt;a href=&quot;http://www.jpg）&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;www.jpg）&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;配置ssh&lt;br&gt;1：&lt;a href=&quot;https://blog.csdn.net/qq_42351033/article/details/99182662（链接里面博主里讲的很清楚）&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://blog.csdn.net/qq_42351033/article/details/99182662（链接里面博主里讲的很清楚）&lt;/a&gt;  切记不要整条复制，把网址复制下来就可以&lt;/p&gt;
     
     </summary>
     
