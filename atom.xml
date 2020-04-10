@@ -105,7 +105,7 @@
     <link href="http://yoursite.com/2020/03/09/2020%E6%88%98%E8%83%9C%E7%96%AB%E6%83%85/"/>
     <id>http://yoursite.com/2020/03/09/2020%E6%88%98%E8%83%9C%E7%96%AB%E6%83%85/</id>
     <published>2020-03-09T03:50:01.980Z</published>
-    <updated>2020-04-09T14:40:31.117Z</updated>
+    <updated>2020-04-10T04:29:54.793Z</updated>
     
     <summary type="html">
     
@@ -113,7 +113,7 @@
       
         
         
-          &lt;p&gt;&lt;img src=&quot;../images/2020%E6%88%98%E8%83%9C%E7%96%AB%E6%83%85/1580963311571520.png&quot; alt=&quot;1580963311571520&quot;&gt;&lt;/p&gt;
+          &lt;p&gt;&lt;img src=&quot;../images/2020%E6%88%98%E8%83%9C%E7%96%AB%E6%83%85/737.jpg&quot; alt=&quot;737&quot;&gt;&lt;/p&gt;
 &lt;p&gt;2020
         
       
@@ -129,19 +129,24 @@
   </entry>
   
   <entry>
-    <title>vs code 的常用快捷键列表</title>
+    <title>vs code的常用快捷键列表</title>
     <link href="http://yoursite.com/2020/02/06/vs%20code%20%E7%9A%84%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%88%97%E8%A1%A8/"/>
     <id>http://yoursite.com/2020/02/06/vs%20code%20%E7%9A%84%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%88%97%E8%A1%A8/</id>
     <published>2020-02-06T14:49:29.090Z</published>
-    <updated>2020-04-10T03:56:37.086Z</updated>
+    <updated>2020-04-10T04:32:21.104Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;一、vs code 的常用快捷键列表&lt;br&gt;1、注释：&lt;br&gt;a) 单行注释：[ctrl+k,ctrl+c] 或 ctrl+/&lt;br&gt;b) 取消单行注释：[ctrl+k,ctrl+u] (按下ctrl不放，再按k + u)&lt;br&gt;c) 多行注释：[alt+shift+A]&lt;br&gt;d) 多行注释：/**&lt;br&gt;2、移动行：alt+up/down&lt;br&gt;3、显示/隐藏左侧目录栏 ctrl + b&lt;br&gt;4、复制当前行：shift + alt +up/down&lt;br&gt;5、删除当前行：shift + ctrl + k&lt;br&gt;6、控制台终端显示与隐藏：ctrl + ~&lt;br&gt;7、查找文件/安装vs code 插件地址：ctrl + p&lt;br&gt;8、代码格式化：shift + alt +f&lt;br&gt;9、新建一个窗口: ctrl + shift + n&lt;br&gt;10、行增加缩进: ctrl + [
+      &lt;p&gt;&lt;img src=&quot;../images/vs%20code%20%E7%9A%84%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%88%97%E8%A1%A8/%E5%8A%A8%E6%BC%AB%E5%A3%81%E7%BA%B8.jpg&quot; alt=&quot;动漫壁纸&quot;&gt;&lt;/p&gt;
+&lt;p&gt;一、vs code 的常用快捷键列表&lt;br&gt;1、注释：&lt;br&gt;a) 单行注释：[ctrl+k,ctrl+c] 或 ctrl+/&lt;br&gt;b) 取消单行注释：[ctrl+k,ctrl+u] (按下ctrl不放，再按k + u)&lt;br&gt;c) 多行注释：[alt+shift+A]&lt;br&gt;d) 多行注释：/**
     
     </summary>
     
     
+      <category term="快捷键" scheme="http://yoursite.com/categories/%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+    
+    
+      <category term="vscode" scheme="http://yoursite.com/tags/vscode/"/>
     
   </entry>
   
@@ -150,14 +155,13 @@
     <link href="http://yoursite.com/2020/01/29/css%20%E9%80%89%E6%8B%A9%E7%AC%A6/"/>
     <id>http://yoursite.com/2020/01/29/css%20%E9%80%89%E6%8B%A9%E7%AC%A6/</id>
     <published>2020-01-29T05:46:33.453Z</published>
-    <updated>2020-04-10T04:23:58.913Z</updated>
+    <updated>2020-04-10T04:34:11.614Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;伪类选择符&lt;/p&gt;
-&lt;p&gt;伪类选择符，为什么叫做伪类选择符，它允许给html不存在的标签（标签的某种状态）设置样式，、&lt;br&gt;比如说我们给html中一个标签元素的鼠标滑过的状态来设置字体颜色：&lt;/p&gt;
-&lt;p&gt;a:hover{color:red;}&lt;br&gt;上面一行代码就是为 a 标签鼠标滑过的状态设置字体颜色变红。这样就会使第一段文字内容中的“胆小如鼠”文字加入鼠标滑过字体颜色变为红色特效。&lt;/p&gt;
-&lt;p&gt;分组选择符&lt;br&gt;当你想为html中多个标签元素设置同一个样式时，可以使用分组选择符（，），&lt;br&gt;如下代码为右侧代码编辑器中的h1、span标签同时设置字体颜色为红色：
+      &lt;p&gt;&lt;img src=&quot;../images/css%20%E9%80%89%E6%8B%A9%E7%AC%A6/1615533T0-16.jpg&quot; alt=&quot;1615533T0-16&quot;&gt;&lt;/p&gt;
+&lt;p&gt;伪类选择符&lt;/p&gt;
+&lt;p&gt;伪类选择符，为什么叫做伪类选择符，它允许给html不存在的标签（标签的某种状态）设置样式，、&lt;br&gt;比如说我们给html中一个标签元素的鼠标滑过的状态来设置字体颜色：
     
     </summary>
     
@@ -174,17 +178,12 @@
     <link href="http://yoursite.com/2020/01/23/hello-world/"/>
     <id>http://yoursite.com/2020/01/23/hello-world/</id>
     <published>2020-01-23T14:54:38.911Z</published>
-    <updated>2020-01-23T14:54:38.911Z</updated>
+    <updated>2020-04-10T04:36:58.883Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
-        
-      
+      &lt;p&gt;&lt;img src=&quot;../images/hello-world/105111-1568602271007b.jpg&quot; alt=&quot;105111-1568602271007b&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub&lt;/a&gt;.
     
     </summary>
     
@@ -197,17 +196,26 @@
     <link href="http://yoursite.com/2020/01/22/%E7%94%A8Node,github%E5%92%8Chexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     <id>http://yoursite.com/2020/01/22/%E7%94%A8Node,github%E5%92%8Chexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
     <published>2020-01-22T06:22:48.615Z</published>
-    <updated>2020-04-10T03:57:00.281Z</updated>
+    <updated>2020-04-10T04:39:33.398Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;1： 下载Node.js&lt;br&gt;&lt;a href=&quot;http://nodejs.org/download/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://nodejs.org/download/&lt;/a&gt;&lt;br&gt;2： 下载并安装git&lt;br&gt;&lt;a href=&quot;https://git-scm.com/download/win&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://git-scm.com/download/win&lt;/a&gt;&lt;br&gt;3：  去GitHub官网申请一个账号&lt;br&gt;Github官网：&lt;a href=&quot;https://github.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;img src=&quot;../images/%E7%94%A8Node,github%E5%92%8Chexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/thumb-1920-862313.jpg&quot; alt=&quot;thumb-1920-862313&quot;&gt;&lt;/p&gt;
+&lt;p&gt;﻿1： 下载Node.js&lt;br&gt;&lt;a href=&quot;http://nodejs.org/download/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://nodejs.org/download/&lt;/a&gt;&lt;br&gt;2： 下载并安装git&lt;br&gt;&lt;a href=&quot;https://git-scm.com/download/win&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://git-scm.com/download/win&lt;/a&gt;&lt;br&gt;3：  去GitHub官网申请一个账号&lt;br&gt;Github官网：&lt;a href=&quot;https://github.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;！【你想输入的替代文字】（用Node,github和hexo搭建的个人博客/&lt;a href=&quot;http://www.jpg）&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;www.jpg）&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;配置ssh&lt;br&gt;1：&lt;a href=&quot;https://blog.csdn.net/qq_42351033/article/details/99182662（链接里面博主里讲的很清楚）&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://blog.csdn.net/qq_42351033/article/details/99182662（链接里面博主里讲的很清楚）&lt;/a&gt;  切记不要整条复制，把网址复制下来就可以&lt;/p&gt;
     
     </summary>
     
     
+      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Node.js" scheme="http://yoursite.com/tags/Node-js/"/>
+    
+      <category term="github" scheme="http://yoursite.com/tags/github/"/>
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
     
   </entry>
   
