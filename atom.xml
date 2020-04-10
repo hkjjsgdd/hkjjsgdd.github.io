@@ -174,6 +174,63 @@
   </entry>
   
   <entry>
+    <title>css（选择器）</title>
+    <link href="http://yoursite.com/2020/01/28/css%20%EF%BC%88%E9%80%89%E6%8B%A9%E5%99%A8%EF%BC%89/"/>
+    <id>http://yoursite.com/2020/01/28/css%20%EF%BC%88%E9%80%89%E6%8B%A9%E5%99%A8%EF%BC%89/</id>
+    <published>2020-01-28T15:40:44.362Z</published>
+    <updated>2020-04-10T04:40:44.293Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;../images/css%20%EF%BC%88%E9%80%89%E6%8B%A9%E5%99%A8%EF%BC%89/13-161011153I1529.jpg&quot; alt=&quot;13-161011153I1529&quot;&gt;&lt;/p&gt;
+&lt;p&gt;p{&lt;br&gt;   font-size:12px;&lt;br&gt;   color:red;&lt;br&gt;   font-weight:bold;&lt;br&gt;}&lt;/p&gt;
+&lt;p&gt;类选择器&lt;/p&gt;
+&lt;p&gt;1、英文圆点开头&lt;/p&gt;
+&lt;p&gt;2、其中类选器名称可以任意起名（但不要起中文噢）&lt;/p&gt;
+&lt;p&gt;使用方法：&lt;/p&gt;
+&lt;p&gt;第一步：使用合适的标签把要修饰的内容标记起来，如下：&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;胆小如鼠&lt;/span&gt;&lt;br&gt;第二步：使用class=”类选择器名称”为标签设置一个类，如下：&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;stress&quot;&gt;胆小如鼠&lt;/span&gt;&lt;br&gt;第三步：设置类选器css样式，如下：&lt;/p&gt;
+&lt;p&gt;.stress{color:red;}/&lt;em&gt;类前面要加入一个英文圆点&lt;/em&gt;/
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="css" scheme="http://yoursite.com/tags/css/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>新年第一篇博客（HTML5标签）</title>
+    <link href="http://yoursite.com/2020/01/25/%E6%96%B0%E5%B9%B4%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%EF%BC%88HTML5%E6%A0%87%E7%AD%BE%EF%BC%89/"/>
+    <id>http://yoursite.com/2020/01/25/%E6%96%B0%E5%B9%B4%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%EF%BC%88HTML5%E6%A0%87%E7%AD%BE%EF%BC%89/</id>
+    <published>2020-01-25T04:18:29.151Z</published>
+    <updated>2020-04-10T04:40:48.571Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="HTML" scheme="http://yoursite.com/tags/HTML/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hello World</title>
     <link href="http://yoursite.com/2020/01/23/hello-world/"/>
     <id>http://yoursite.com/2020/01/23/hello-world/</id>

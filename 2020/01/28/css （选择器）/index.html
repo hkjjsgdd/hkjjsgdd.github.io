@@ -11,7 +11,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-    Hello World |  捞月亮的人
+    css（选择器） |  捞月亮的人
   </title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   
@@ -39,7 +39,7 @@
   <div id="app">
     <main class="content on">
       <section class="outer">
-  <article id="post-hello-world" class="article article-type-post" itemscope
+  <article id="post-css （选择器）" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
   <div class="article-inner">
@@ -47,7 +47,7 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  Hello World
+  css（选择器）
 </h1>
  
 
@@ -56,10 +56,14 @@
 
     
     <div class="article-meta">
-      <a href="/2020/01/23/hello-world/" class="article-date">
-  <time datetime="2020-01-23T14:54:38.911Z" itemprop="datePublished">2020-01-23</time>
+      <a href="/2020/01/28/css%20%EF%BC%88%E9%80%89%E6%8B%A9%E5%99%A8%EF%BC%89/" class="article-date">
+  <time datetime="2020-01-28T15:40:44.362Z" itemprop="datePublished">2020-01-28</time>
 </a>
       
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
+  </div>
+
       
       
 <div class="word_count">
@@ -67,7 +71,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">73</span>
+            <span class="post-count">274</span>
         </span>
     </span>
 
@@ -87,8 +91,6 @@
 
     
     
-    <div class="tocbot"></div>
-
 
 
 
@@ -101,20 +103,25 @@
       
 
       
-      <p><img src="../images/hello-world/105111-1568602271007b.jpg" alt="105111-1568602271007b"></p>
-<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>. <a id="more"></a></p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+      <p><img src="../images/css%20%EF%BC%88%E9%80%89%E6%8B%A9%E5%99%A8%EF%BC%89/13-161011153I1529.jpg" alt="13-161011153I1529"></p>
+<p>p{<br>   font-size:12px;<br>   color:red;<br>   font-weight:bold;<br>}</p>
+<p>类选择器</p>
+<p>1、英文圆点开头</p>
+<p>2、其中类选器名称可以任意起名（但不要起中文噢）</p>
+<p>使用方法：</p>
+<p>第一步：使用合适的标签把要修饰的内容标记起来，如下：</p>
+<p><span>胆小如鼠</span><br>第二步：使用class=”类选择器名称”为标签设置一个类，如下：</p>
+<p><span class="stress">胆小如鼠</span><br>第三步：设置类选器css样式，如下：</p>
+<p>.stress{color:red;}/<em>类前面要加入一个英文圆点</em>/       <a id="more"></a></p>
+<p>ID选择器</p>
+<p>#setGreen{<br>   color:green;<br>}</p>
+<p><span id="setGreen">公开课</span></p>
+<p>子选择器<br>.food&gt;li{border:1px solid red;}   即大于符号&gt;</p>
+<p>后代选择器<br>.first  span{color:red;}</p>
+<p>子选择器和后代选择器的区别就是   &gt;作用于元素的第一代后，空格作用于元素的所有后代</p>
+<p>通用选择器</p>
+<p>通用选择器是功能最强大的选择器，它使用一个（*）号指定，<br>它的作用是匹配html中所有标签元素，如下使用下面代码使用html中任意标签元素字体颜色全部设置为红色：</p>
+<p>（）{color:red;}</p>
 
       
       <!-- reward -->
@@ -179,13 +186,15 @@
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://yoursite.com/2020/01/23/hello-world/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://yoursite.com/2020/01/28/css%20%EF%BC%88%E9%80%89%E6%8B%A9%E5%99%A8%EF%BC%89/" alt="微信分享二维码">
     </div>
 </div>
 
 <div id="share-mask"></div>
       
       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/" rel="tag">css</a></li></ul>
+
 
     </footer>
 
@@ -195,19 +204,19 @@
   
   <nav class="article-nav">
     
-      <a href="/2020/01/25/%E6%96%B0%E5%B9%B4%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%EF%BC%88HTML5%E6%A0%87%E7%AD%BE%EF%BC%89/" class="article-nav-link">
+      <a href="/2020/01/29/css%20%E9%80%89%E6%8B%A9%E7%AC%A6/" class="article-nav-link">
         <strong class="article-nav-caption">上一篇</strong>
         <div class="article-nav-title">
           
-            新年第一篇博客（HTML5标签）
+            css（选择符）
           
         </div>
       </a>
     
     
-      <a href="/2020/01/22/%E7%94%A8Node,github%E5%92%8Chexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="article-nav-link">
+      <a href="/2020/01/25/%E6%96%B0%E5%B9%B4%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%EF%BC%88HTML5%E6%A0%87%E7%AD%BE%EF%BC%89/" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">用Node,github和hexo搭建个人博客</div>
+        <div class="article-nav-title">新年第一篇博客（HTML5标签）</div>
       </a>
     
   </nav>
