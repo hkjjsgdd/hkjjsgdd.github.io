@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-04-10T09:40:42.057Z</updated>
+  <updated>2020-04-10T09:58:32.399Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,27 +17,24 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>测试文章</title>
+    <title>博客解决图片插入问题</title>
     <link href="http://yoursite.com/2020/04/10/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/"/>
     <id>http://yoursite.com/2020/04/10/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</id>
     <published>2020-04-10T09:23:17.000Z</published>
-    <updated>2020-04-10T09:40:42.057Z</updated>
+    <updated>2020-04-10T09:58:32.399Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;&lt;img src=&quot;/2020/04/10/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/001831mieh92lluuvh0eli.jpg&quot;
-        
-      
+      &lt;p&gt;&lt;img src=&quot;/2020/04/10/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/001831mieh92lluuvh0eli.jpg&quot; alt=&quot;001831mieh92lluuvh0eli&quot;&gt;&lt;/p&gt;
+&lt;p&gt;首先  在_config.yml中设置&lt;code&gt;post_asset_folder&lt;/code&gt;为&lt;strong&gt;true&lt;/strong&gt;，其次在gitbash输入以下命令&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;npm install hexo-asset-image --save&lt;/code&gt; 但是下载了该插件在hexo3.0版本还是不可用&lt;/p&gt;
+&lt;p&gt;在这里我推荐一种方法，也是我从csdn上找到的，亲测&lt;/p&gt;
     
     </summary>
     
     
     
-      <category term="测试" scheme="http://yoursite.com/tags/%E6%B5%8B%E8%AF%95/"/>
+      <category term="图片插入" scheme="http://yoursite.com/tags/%E5%9B%BE%E7%89%87%E6%8F%92%E5%85%A5/"/>
     
   </entry>
   
@@ -46,7 +43,7 @@
     <link href="http://yoursite.com/2020/04/09/%E6%96%B0%E4%B8%BB%E9%A2%98ayer,%E4%BB%A5%E5%8F%8Ahexo%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/"/>
     <id>http://yoursite.com/2020/04/09/%E6%96%B0%E4%B8%BB%E9%A2%98ayer,%E4%BB%A5%E5%8F%8Ahexo%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/</id>
     <published>2020-04-09T13:02:11.602Z</published>
-    <updated>2020-04-10T04:21:40.748Z</updated>
+    <updated>2020-04-10T09:50:13.767Z</updated>
     
     <summary type="html">
     
@@ -54,7 +51,7 @@
       
         
         
-          &lt;img
+          &lt;p&gt;&lt;img src=&quot;/2020/04/09/%E6%96%B0%E4%B8%BB%E9%A2%98ayer,%E4%BB%A5%E5%8F%8Ahexo%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/thumb-1920-764958.png&quot;
         
       
     
@@ -75,7 +72,7 @@
     <link href="http://yoursite.com/2020/04/08/Typora%E7%9A%84%E7%94%A8%E6%B3%95/"/>
     <id>http://yoursite.com/2020/04/08/Typora%E7%9A%84%E7%94%A8%E6%B3%95/</id>
     <published>2020-04-08T13:25:03.337Z</published>
-    <updated>2020-04-09T14:34:02.457Z</updated>
+    <updated>2020-04-10T09:51:02.954Z</updated>
     
     <summary type="html">
     
@@ -83,7 +80,7 @@
       
         
         
-          &lt;p&gt;&lt;img src=&quot;/2020/04/08/Typora%E7%9A%84%E7%94%A8%E6%B3%95/images/Typora%E7%9A%84%E7%94%A8%E6%B3%95/1b973754a00f4255a1f98cfa847b7449.jpeg&quot;
+          &lt;p&gt;&lt;img src=&quot;/2020/04/08/Typora%E7%9A%84%E7%94%A8%E6%B3%95/1b973754a00f4255a1f98cfa847b7449.jpeg&quot;
         
       
     
@@ -102,11 +99,11 @@
     <link href="http://yoursite.com/2020/04/08/javascript%E8%BE%93%E5%87%BA%E5%86%85%E5%AE%B9%EF%BC%88%E5%9B%9B%E7%A7%8D%EF%BC%89/"/>
     <id>http://yoursite.com/2020/04/08/javascript%E8%BE%93%E5%87%BA%E5%86%85%E5%AE%B9%EF%BC%88%E5%9B%9B%E7%A7%8D%EF%BC%89/</id>
     <published>2020-04-08T13:18:17.981Z</published>
-    <updated>2020-04-10T03:56:10.509Z</updated>
+    <updated>2020-04-10T09:50:41.936Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;/2020/04/08/javascript%E8%BE%93%E5%87%BA%E5%86%85%E5%AE%B9%EF%BC%88%E5%9B%9B%E7%A7%8D%EF%BC%89/images/javascript%E8%BE%93%E5%87%BA%E5%86%85%E5%AE%B9%EF%BC%88%E5%9B%9B%E7%A7%8D%EF%BC%89/0luplb3wr3c.jpg&quot; alt=&quot;0luplb3wr3c&quot;&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;img src=&quot;/2020/04/08/javascript%E8%BE%93%E5%87%BA%E5%86%85%E5%AE%B9%EF%BC%88%E5%9B%9B%E7%A7%8D%EF%BC%89/0luplb3wr3c.jpg&quot; alt=&quot;0luplb3wr3c&quot;&gt;&lt;/p&gt;
 &lt;p&gt;1.&lt;code&gt;&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;&lt;/code&gt;/##输出内容用“”括起，直接输出“”内的内容&lt;/p&gt;
 &lt;p&gt;​            &lt;code&gt;document.write(&amp;quot;I love javascript&amp;quot;);&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;​            &lt;code&gt;&amp;lt;/script&amp;gt;&lt;/code&gt;&lt;/p&gt;
@@ -130,7 +127,7 @@
     <link href="http://yoursite.com/2020/03/09/2020%E6%88%98%E8%83%9C%E7%96%AB%E6%83%85/"/>
     <id>http://yoursite.com/2020/03/09/2020%E6%88%98%E8%83%9C%E7%96%AB%E6%83%85/</id>
     <published>2020-03-09T03:50:01.980Z</published>
-    <updated>2020-04-10T04:29:54.793Z</updated>
+    <updated>2020-04-10T09:49:48.999Z</updated>
     
     <summary type="html">
     
@@ -138,7 +135,8 @@
       
         
         
-          &lt;p&gt;&lt;img src=&quot;/2020/03/09/2020%E6%88%98%E8%83%9C%E7%96%AB%E6%83%85/images/2020%E6%88%98%E8%83%9C%E7%96%AB%E6%83%85/737.jpg&quot;
+          &lt;p&gt;&lt;img src=&quot;/2020/03/09/2020%E6%88%98%E8%83%9C%E7%96%AB%E6%83%85/737.jpg&quot; alt=&quot;737&quot;&gt;&lt;/p&gt;
+&lt;p&gt;2020
         
       
     
@@ -157,11 +155,11 @@
     <link href="http://yoursite.com/2020/02/06/vs%20code%20%E7%9A%84%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%88%97%E8%A1%A8/"/>
     <id>http://yoursite.com/2020/02/06/vs%20code%20%E7%9A%84%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%88%97%E8%A1%A8/</id>
     <published>2020-02-06T14:49:29.090Z</published>
-    <updated>2020-04-10T04:32:21.104Z</updated>
+    <updated>2020-04-10T09:49:17.468Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;/2020/02/06/vs%20code%20%E7%9A%84%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%88%97%E8%A1%A8/images/vs%20code%20%E7%9A%84%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%88%97%E8%A1%A8/%E5%8A%A8%E6%BC%AB%E5%A3%81%E7%BA%B8.jpg&quot; alt=&quot;动漫壁纸&quot;&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;img src=&quot;/2020/02/06/vs%20code%20%E7%9A%84%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%88%97%E8%A1%A8/%E5%8A%A8%E6%BC%AB%E5%A3%81%E7%BA%B8.jpg&quot; alt=&quot;动漫壁纸&quot;&gt;&lt;/p&gt;
 &lt;p&gt;一、vs code 的常用快捷键列表&lt;br&gt;1、注释：&lt;br&gt;a) 单行注释：[ctrl+k,ctrl+c] 或 ctrl+/&lt;br&gt;b) 取消单行注释：[ctrl+k,ctrl+u] (按下ctrl不放，再按k + u)&lt;br&gt;c) 多行注释：[alt+shift+A]&lt;br&gt;d) 多行注释：/**&lt;/p&gt;
     
     </summary>
@@ -179,11 +177,11 @@
     <link href="http://yoursite.com/2020/01/29/css%20%E9%80%89%E6%8B%A9%E7%AC%A6/"/>
     <id>http://yoursite.com/2020/01/29/css%20%E9%80%89%E6%8B%A9%E7%AC%A6/</id>
     <published>2020-01-29T05:46:33.453Z</published>
-    <updated>2020-04-10T04:34:11.614Z</updated>
+    <updated>2020-04-10T09:48:53.182Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;/2020/01/29/css%20%E9%80%89%E6%8B%A9%E7%AC%A6/images/css%20%E9%80%89%E6%8B%A9%E7%AC%A6/1615533T0-16.jpg&quot; alt=&quot;1615533T0-16&quot;&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;img src=&quot;/2020/01/29/css%20%E9%80%89%E6%8B%A9%E7%AC%A6/1615533T0-16.jpg&quot; alt=&quot;1615533T0-16&quot;&gt;&lt;/p&gt;
 &lt;p&gt;伪类选择符&lt;/p&gt;
 &lt;p&gt;伪类选择符，为什么叫做伪类选择符，它允许给html不存在的标签（标签的某种状态）设置样式，、&lt;br&gt;比如说我们给html中一个标签元素的鼠标滑过的状态来设置字体颜色：&lt;/p&gt;
     
@@ -202,11 +200,11 @@
     <link href="http://yoursite.com/2020/01/28/css%20%EF%BC%88%E9%80%89%E6%8B%A9%E5%99%A8%EF%BC%89/"/>
     <id>http://yoursite.com/2020/01/28/css%20%EF%BC%88%E9%80%89%E6%8B%A9%E5%99%A8%EF%BC%89/</id>
     <published>2020-01-28T15:40:44.362Z</published>
-    <updated>2020-04-10T04:40:44.293Z</updated>
+    <updated>2020-04-10T09:47:30.568Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;/2020/01/28/css%20%EF%BC%88%E9%80%89%E6%8B%A9%E5%99%A8%EF%BC%89/images/css%20%EF%BC%88%E9%80%89%E6%8B%A9%E5%99%A8%EF%BC%89/13-161011153I1529.jpg&quot; alt=&quot;13-161011153I1529&quot;&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;img src=&quot;/2020/01/28/css%20%EF%BC%88%E9%80%89%E6%8B%A9%E5%99%A8%EF%BC%89/13-161011153I1529.jpg&quot; alt=&quot;13-161011153I1529&quot;&gt;&lt;/p&gt;
 &lt;p&gt;p{&lt;br&gt;   font-size:12px;&lt;br&gt;   color:red;&lt;br&gt;   font-weight:bold;&lt;br&gt;}&lt;/p&gt;
 &lt;p&gt;类选择器&lt;/p&gt;
 &lt;p&gt;1、英文圆点开头&lt;/p&gt;
@@ -232,7 +230,7 @@
     <link href="http://yoursite.com/2020/01/25/%E6%96%B0%E5%B9%B4%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%EF%BC%88HTML5%E6%A0%87%E7%AD%BE%EF%BC%89/"/>
     <id>http://yoursite.com/2020/01/25/%E6%96%B0%E5%B9%B4%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%EF%BC%88HTML5%E6%A0%87%E7%AD%BE%EF%BC%89/</id>
     <published>2020-01-25T04:18:29.151Z</published>
-    <updated>2020-04-10T09:31:18.921Z</updated>
+    <updated>2020-04-10T09:47:02.923Z</updated>
     
     <summary type="html">
     
@@ -259,11 +257,11 @@
     <link href="http://yoursite.com/2020/01/23/hello-world/"/>
     <id>http://yoursite.com/2020/01/23/hello-world/</id>
     <published>2020-01-23T14:54:38.911Z</published>
-    <updated>2020-04-10T04:36:58.883Z</updated>
+    <updated>2020-04-10T09:48:23.888Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;/2020/01/23/hello-world/images/hello-world/105111-1568602271007b.jpg&quot; alt=&quot;105111-1568602271007b&quot;&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;img src=&quot;/2020/01/23/hello-world/105111-1568602271007b.jpg&quot; alt=&quot;105111-1568602271007b&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
     
     </summary>
@@ -277,11 +275,11 @@
     <link href="http://yoursite.com/2020/01/22/%E7%94%A8Node,github%E5%92%8Chexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     <id>http://yoursite.com/2020/01/22/%E7%94%A8Node,github%E5%92%8Chexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
     <published>2020-01-22T06:22:48.615Z</published>
-    <updated>2020-04-10T04:39:33.398Z</updated>
+    <updated>2020-04-10T09:47:57.419Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;/2020/01/22/%E7%94%A8Node,github%E5%92%8Chexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/images/%E7%94%A8Node,github%E5%92%8Chexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/thumb-1920-862313.jpg&quot; alt=&quot;thumb-1920-862313&quot;&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;img src=&quot;/2020/01/22/%E7%94%A8Node,github%E5%92%8Chexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/thumb-1920-862313.jpg&quot; alt=&quot;thumb-1920-862313&quot;&gt;&lt;/p&gt;
 &lt;p&gt;﻿1： 下载Node.js&lt;br&gt;&lt;a href=&quot;http://nodejs.org/download/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://nodejs.org/download/&lt;/a&gt;&lt;br&gt;2： 下载并安装git&lt;br&gt;&lt;a href=&quot;https://git-scm.com/download/win&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://git-scm.com/download/win&lt;/a&gt;&lt;br&gt;3：  去GitHub官网申请一个账号&lt;br&gt;Github官网：&lt;a href=&quot;https://github.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;！【你想输入的替代文字】（用Node,github和hexo搭建的个人博客/&lt;a href=&quot;http://www.jpg）&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;www.jpg）&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;配置ssh&lt;br&gt;1：&lt;a href=&quot;https://blog.csdn.net/qq_42351033/article/details/99182662（链接里面博主里讲的很清楚）&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://blog.csdn.net/qq_42351033/article/details/99182662（链接里面博主里讲的很清楚）&lt;/a&gt;  切记不要整条复制，把网址复制下来就可以&lt;/p&gt;
