@@ -1,6 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>博客解决图片插入问题</title>
+    <url>/2020/04/10/%E5%8D%9A%E5%AE%A2%E8%A7%A3%E5%86%B3%E5%9B%BE%E7%89%87%E6%8F%92%E5%85%A5%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2020/04/10/%E5%8D%9A%E5%AE%A2%E8%A7%A3%E5%86%B3%E5%9B%BE%E7%89%87%E6%8F%92%E5%85%A5%E9%97%AE%E9%A2%98/ZlvfAPthg15e7j2.jpg" alt="001831mieh92lluuvh0eli.jpg"></p>
+<p>首先  在_config.yml中设置<code>post_asset_folder</code>为<strong>true</strong>，其次在gitbash输入以下命令</p>
+<p><code>npm install hexo-asset-image --save</code> 但是下载了该插件在hexo3.0版本还是不可用</p>
+<p>在这里我推荐一种方法，也是我从csdn上找到的，亲测<a id="more"></a></p>
+<p>该方法是通过修改<code>hexo-asset-image</code>这个插件的源代码来实现的，找到路径<code>node_modules\hexo-asset-image\index.js</code>,替换其中的内容为：</p>
+<p>‘use strict’;<br>var cheerio = require(‘cheerio’);</p>
+<p>// <a href="http://stackoverflow.com/questions/14480345/how-to-get-the-nth-occurrence-in-a-string" target="_blank" rel="noopener">http://stackoverflow.com/questions/14480345/how-to-get-the-nth-occurrence-in-a-string</a><br>function getPosition(str, m, i) {<br>  return str.split(m, i).join(m).length;<br>}</p>
+<p>var version = String(hexo.version).split(‘.’);<br>hexo.extend.filter.register(‘after_post_render’, function(data){<br>  var config = hexo.config;<br>  if(config.post_asset_folder){<br>        var link = data.permalink;<br>    if(version.length &gt; 0 &amp;&amp; Number(version[0]) == 3)<br>       var beginPos = getPosition(link, ‘/‘, 1) + 1;<br>    else<br>       var beginPos = getPosition(link, ‘/‘, 3) + 1;<br>    // In hexo 3.1.1, the permalink of “about” page is like “…/about/index.html”.<br>    var endPos = link.lastIndexOf(‘/‘) + 1;<br>    link = link.substring(beginPos, endPos);</p>
+<pre><code>var toprocess = [&apos;excerpt&apos;, &apos;more&apos;, &apos;content&apos;];
+for(var i = 0; i &lt; toprocess.length; i++){
+  var key = toprocess[i];
+
+  var $ = cheerio.load(data[key], {
+    ignoreWhitespace: false,
+    xmlMode: false,
+    lowerCaseTags: false,
+    decodeEntities: false
+  });
+
+  $(&apos;img&apos;).each(function(){
+    if ($(this).attr(&apos;src&apos;)){
+        // For windows style path, we replace &apos;\&apos; to &apos;/&apos;.
+        var src = $(this).attr(&apos;src&apos;).replace(&apos;\\&apos;, &apos;/&apos;);
+        if(!/http[s]*.*|\/\/.*/.test(src) &amp;&amp;
+           !/^\s*\//.test(src)) {
+          // For &quot;about&quot; page, the first part of &quot;src&quot; can&apos;t be removed.
+          // In addition, to support multi-level local directory.
+          var linkArray = link.split(&apos;/&apos;).filter(function(elem){
+            return elem != &apos;&apos;;
+          });
+          var srcArray = src.split(&apos;/&apos;).filter(function(elem){
+            return elem != &apos;&apos; &amp;&amp; elem != &apos;.&apos;;
+          });
+          if(srcArray.length &gt; 1)
+            srcArray.shift();
+          src = srcArray.join(&apos;/&apos;);
+          $(this).attr(&apos;src&apos;, config.root + link + src);
+          console.info&amp;&amp;console.info(&quot;update link as:--&gt;&quot;+config.root + link + src);
+        }
+    }else{
+        console.info&amp;&amp;console.info(&quot;no src attr, skipped...&quot;);
+        console.info&amp;&amp;console.info($(this));
+    }
+  });
+  data[key] = $.html();
+}</code></pre><p>  }<br>});</p>
+]]></content>
+      <tags>
+        <tag>图片插入</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>测试</title>
+    <url>/2020/04/10/%E6%B5%8B%E8%AF%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="https://s1.ax1x.com/2020/04/10/G7Vvtg.jpg" alt="G7Vvtg.jpg"></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>新主题ayer和hexo官方文档</title>
+    <url>/2020/04/09/%E6%96%B0%E4%B8%BB%E9%A2%98ayer,%E4%BB%A5%E5%8F%8Ahexo%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2020/04/09/%E6%96%B0%E4%B8%BB%E9%A2%98ayer,%E4%BB%A5%E5%8F%8Ahexo%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/QSPAyZoFKpH4Yhv.png" alt="thumb-1920-764958.png"></p>
+<p>今天换了一个主题<u> ayer</u>  个人挺喜欢的 一天都在报错，解决问题中，感觉收获了好多，也养成喜欢看官方文档的好习惯</p>
+<p><em>hexo</em> 官方文档 ：<a href="https://wizardforcel.gitbooks.io/hexo-doc/content/9.html" target="_blank" rel="noopener">https://wizardforcel.gitbooks.io/hexo-doc/content/9.html</a></p>
+]]></content>
+      <categories>
+        <category>Dairy</category>
+      </categories>
+      <tags>
+        <tag>新主题</tag>
+        <tag>官方文档</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Typora的用法</title>
+    <url>/2020/04/08/Typora%E7%9A%84%E7%94%A8%E6%B3%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2020/04/08/Typora%E7%9A%84%E7%94%A8%E6%B3%95/dIxRoJVTPcwq1WC.jpg" alt="1b973754a00f4255a1f98cfa847b7449.jpeg"></p>
+<p><a href="https://lyc-rabbit.github.io/2020/01/27/typora基础使用方法/" target="_blank" rel="noopener">https://lyc-rabbit.github.io/2020/01/27/typora%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</a>  Typora的用法 转载自钰兔大王的世界</p>
+]]></content>
+      <categories>
+        <category>分享</category>
+      </categories>
+      <tags>
+        <tag>Typora</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JavaScript学习笔记</title>
+    <url>/2020/04/08/javascript%E8%BE%93%E5%87%BA%E5%86%85%E5%AE%B9%EF%BC%88%E5%9B%9B%E7%A7%8D%EF%BC%89/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2020/04/08/javascript%E8%BE%93%E5%87%BA%E5%86%85%E5%AE%B9%EF%BC%88%E5%9B%9B%E7%A7%8D%EF%BC%89/uiA73cIqfCylRBo.jpg" alt="0luplb3wr3c.jpg"></p>
+<p>1.<code>&lt;script type=&quot;text/javascript&quot;&gt;</code>/##输出内容用“”括起，直接输出“”内的内容</p>
+<p>​            <code>document.write(&quot;I love javascript&quot;);</code></p>
+<p>​            <code>&lt;/script&gt;</code></p>
+<p>2.<code>&lt;script  type=&quot;text/javascript&quot;&gt;</code>/##通过变量，输出内容</p>
+<p>​    <code>var  mystr=&quot;hello world!&quot;;</code></p>
+<p>​    <code>document.write(mystr);</code></p>
+<p>​    <code>&lt;/script&gt;</code>        <a id="more"></a></p>
+<p>3.<code>&lt;script type=&quot;text/javascript&quot;&gt;</code>/##输出多项内容，内容之间用+号连接</p>
+<p>​        <code>var  mystr=&quot;hello&quot;</code></p>
+<p><code>document.write(mystr+&quot;I LOVE Javascript&quot;)</code></p>
+<p><code>&lt;/script&gt;</code></p>
+<p>4.<code>&lt;script   type=&quot;text/javascript&quot;&gt;</code>/##输出HTML标签，并起作用，标签用“”括起来</p>
+<p>​            <code>var  mystr=&quot;hello&quot;;</code></p>
+<p><code>document.write(mystr+&quot;&lt;br&gt;&quot;);</code></p>
+<p><code>document.write(&quot;javascript&quot;);</code></p>
+<p><strong>初学JavaScript第一天</strong></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>2020新型冠状病毒影响着我们</title>
     <url>/2020/03/09/2020%E6%88%98%E8%83%9C%E7%96%AB%E6%83%85/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2020/03/09/2020%E6%88%98%E8%83%9C%E7%96%AB%E6%83%85/At9ZRyfVpFMu5GL.jpg" alt="737.jpg"></p>
@@ -11,6 +127,19 @@
       </categories>
       <tags>
         <tag>抗疫</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>vs code的常用快捷键列表</title>
+    <url>/2020/02/06/vs%20code%20%E7%9A%84%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%88%97%E8%A1%A8/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2020/02/06/vs%20code%20%E7%9A%84%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%88%97%E8%A1%A8/m6nEb4VKASte8hN.jpg" alt="动漫壁纸.jpg"></p>
+<p>一、vs code 的常用快捷键列表<br>1、注释：<br>a) 单行注释：[ctrl+k,ctrl+c] 或 ctrl+/<br>b) 取消单行注释：[ctrl+k,ctrl+u] (按下ctrl不放，再按k + u)<br>c) 多行注释：[alt+shift+A]<br>d) 多行注释：/**              <a id="more"></a><br>2、移动行：alt+up/down<br>3、显示/隐藏左侧目录栏 ctrl + b<br>4、复制当前行：shift + alt +up/down<br>5、删除当前行：shift + ctrl + k<br>6、控制台终端显示与隐藏：ctrl + ~<br>7、查找文件/安装vs code 插件地址：ctrl + p<br>8、代码格式化：shift + alt +f<br>9、新建一个窗口: ctrl + shift + n<br>10、行增加缩进: ctrl + [<br>11、行减少缩进: ctrl + ]<br>12、裁剪尾随空格(去掉一行的末尾那些没用的空格) : ctrl + shift + x<br>13、字体放大/缩小: ctrl + ( + 或 - )<br>14、拆分编辑器 :ctrl + 1/2/3<br>15、切换窗口:  ctrl + shift + left/right<br>16、关闭编辑器窗口:  ctrl + w<br>17、关闭所有窗口 : ctrl + k + w<br>18、切换全屏 :F11<br>19、自动换行:  alt + z<br>20、显示git:   ctrl + shift + g<br>21、全局查找文件：ctrl + p<br>22、显示相关插件的命令(如：git log)：ctrl + shift + p<br>23、选中文字：shift + left / right / up / down<br>24、折叠代码： ctrl + k + 0-9 (0是完全折叠)<br>25、展开代码： ctrl + k + j (完全展开代码)<br>26、删除行 ： ctrl + shift + k<br>27、快速切换主题：ctrl + k / ctrl + t<br>28、快速回到顶部 ： ctrl + home<br>29、快速回到底部 : ctrl + end<br>30、格式化选定代码 ：ctrl + k / ctrl +f<br>31、选中代码 ： shift + 鼠标左键<br>32、多行同时添加内容（光标） ：ctrl + alt + up/down<br>33、全局替换：ctrl + shift + h<br>34、当前文件替换：ctrl + h<br>35、打开最近打开的文件：ctrl + r<br>36、打开新的命令窗：ctrl + shift + c<br>二、vs code 的常用插件<br>1、Auto Rename Tag 修改html标签，自动帮你完成尾部闭合标签的同步修改，和webstorm一样。<br>2、Auto Close Tag 自动闭合HTML标签<br>4、Beautiful 格式化代码的工具<br>5、Dash Dash是MacOS的API文档浏览器和代码段管理器<br>6、Ejs Snippets ejs 代码提示<br>7、ESLint 检查javascript语法错误与提示<br>8、File Navigator 快速查找文件<br>9、Git History(git log)查看git log<br>10、Gulp Snippets 写gulp时用到，gulp语法提示。<br>11、HTML CSS Support  在HTML标签上写class智能提示当前项目所支持的样式<br>12、HTML Snippets 超级好用且初级的H5代码片段以及提示<br>13、Debug for Chrome让vs code映射chrome的debug功能，静态页面都可以用vscode来打断点调试、配饰稍微复杂一点<br>14、Document this Js的注释模板<br>15、jQuery Code Snippets jquery提示工具<br>16、Html2jade html模板转pug模板<br>17、JS-CSS-HTML Formatter 格式化<br>18、Npm intellisense require 时的包提示工具<br>19、Open in browser 打开默认浏览器<br>20、One Dark Theme 一个vs code的主题<br>21、Path Intellisense 自动路径补全、默认不带这个功能<br>22、Project Manager多个项目之间快速切换的工具<br>23、Pug(Jade) snippets pug语法提示<br>24、React Components 根据文件名创建反应组件代码。<br>25、React Native Tools reactNative工具类为React Native项目提供了开发环境。<br>26、Stylelintcss/sass代码审查<br>27、Typings auto installer 安装vscode 的代码提示依赖库，基于typtings的<br>28、View In Browser 默认浏览器查看HTML文件（快捷键Ctrl+F1可以修改）<br>29、Vscode-icons 让vscode资源目录加上图标、必备<br>30、VueHelper Vue2代码段（包括Vue2 api、vue-router2、vuex2）<br>31、Vue 2 Snippets vue必备vue代码提示<br>32、Vue-color vue语法高亮主题<br>33、Auto-Open Markdown Preview markdown文件自动开启预览<br>34、EverMonkey 印象笔记<br>35、atom one dark atom的一个高亮主题(个人推荐)<br>三、常用的电脑快捷键<br>1、ctrl + shift + delete 快速清除浏览器缓存<br>2、ctrl + alt + delete 快速进入任务管理器页面<br>3、window + L  快速锁定电脑<br>4、window + d  所有窗口最小化<br>5、 window + e  打开我的资源管理器(我的电脑)<br>6、 window + f  快速打开搜索窗口<br>7、 alt + tab快速查看打开的应用与窗口</p>
+]]></content>
+      <categories>
+        <category>快捷键</category>
+      </categories>
+      <tags>
+        <tag>vscode</tag>
       </tags>
   </entry>
   <entry>
@@ -66,148 +195,6 @@
       </tags>
   </entry>
   <entry>
-    <title>JavaScript学习笔记</title>
-    <url>/2020/04/08/javascript%E8%BE%93%E5%87%BA%E5%86%85%E5%AE%B9%EF%BC%88%E5%9B%9B%E7%A7%8D%EF%BC%89/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2020/04/08/javascript%E8%BE%93%E5%87%BA%E5%86%85%E5%AE%B9%EF%BC%88%E5%9B%9B%E7%A7%8D%EF%BC%89/uiA73cIqfCylRBo.jpg" alt="0luplb3wr3c.jpg"></p>
-<p>1.<code>&lt;script type=&quot;text/javascript&quot;&gt;</code>/##输出内容用“”括起，直接输出“”内的内容</p>
-<p>​            <code>document.write(&quot;I love javascript&quot;);</code></p>
-<p>​            <code>&lt;/script&gt;</code></p>
-<p>2.<code>&lt;script  type=&quot;text/javascript&quot;&gt;</code>/##通过变量，输出内容</p>
-<p>​    <code>var  mystr=&quot;hello world!&quot;;</code></p>
-<p>​    <code>document.write(mystr);</code></p>
-<p>​    <code>&lt;/script&gt;</code>        <a id="more"></a></p>
-<p>3.<code>&lt;script type=&quot;text/javascript&quot;&gt;</code>/##输出多项内容，内容之间用+号连接</p>
-<p>​        <code>var  mystr=&quot;hello&quot;</code></p>
-<p><code>document.write(mystr+&quot;I LOVE Javascript&quot;)</code></p>
-<p><code>&lt;/script&gt;</code></p>
-<p>4.<code>&lt;script   type=&quot;text/javascript&quot;&gt;</code>/##输出HTML标签，并起作用，标签用“”括起来</p>
-<p>​            <code>var  mystr=&quot;hello&quot;;</code></p>
-<p><code>document.write(mystr+&quot;&lt;br&gt;&quot;);</code></p>
-<p><code>document.write(&quot;javascript&quot;);</code></p>
-<p><strong>初学JavaScript第一天</strong></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Typora的用法</title>
-    <url>/2020/04/08/Typora%E7%9A%84%E7%94%A8%E6%B3%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2020/04/08/Typora%E7%9A%84%E7%94%A8%E6%B3%95/dIxRoJVTPcwq1WC.jpg" alt="1b973754a00f4255a1f98cfa847b7449.jpeg"></p>
-<p><a href="https://lyc-rabbit.github.io/2020/01/27/typora基础使用方法/" target="_blank" rel="noopener">https://lyc-rabbit.github.io/2020/01/27/typora%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</a>  Typora的用法 转载自钰兔大王的世界</p>
-]]></content>
-      <categories>
-        <category>分享</category>
-      </categories>
-      <tags>
-        <tag>Typora</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2020/01/23/hello-world/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="https://i.loli.net/2020/04/10/21uOSDsGBZb7Ne3.jpg" alt="105111-1568602271007b.jpg"></p>
-<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>. <a id="more"></a></p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>vs code的常用快捷键列表</title>
-    <url>/2020/02/06/vs%20code%20%E7%9A%84%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%88%97%E8%A1%A8/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2020/02/06/vs%20code%20%E7%9A%84%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%88%97%E8%A1%A8/m6nEb4VKASte8hN.jpg" alt="动漫壁纸.jpg"></p>
-<p>一、vs code 的常用快捷键列表<br>1、注释：<br>a) 单行注释：[ctrl+k,ctrl+c] 或 ctrl+/<br>b) 取消单行注释：[ctrl+k,ctrl+u] (按下ctrl不放，再按k + u)<br>c) 多行注释：[alt+shift+A]<br>d) 多行注释：/**              <a id="more"></a><br>2、移动行：alt+up/down<br>3、显示/隐藏左侧目录栏 ctrl + b<br>4、复制当前行：shift + alt +up/down<br>5、删除当前行：shift + ctrl + k<br>6、控制台终端显示与隐藏：ctrl + ~<br>7、查找文件/安装vs code 插件地址：ctrl + p<br>8、代码格式化：shift + alt +f<br>9、新建一个窗口: ctrl + shift + n<br>10、行增加缩进: ctrl + [<br>11、行减少缩进: ctrl + ]<br>12、裁剪尾随空格(去掉一行的末尾那些没用的空格) : ctrl + shift + x<br>13、字体放大/缩小: ctrl + ( + 或 - )<br>14、拆分编辑器 :ctrl + 1/2/3<br>15、切换窗口:  ctrl + shift + left/right<br>16、关闭编辑器窗口:  ctrl + w<br>17、关闭所有窗口 : ctrl + k + w<br>18、切换全屏 :F11<br>19、自动换行:  alt + z<br>20、显示git:   ctrl + shift + g<br>21、全局查找文件：ctrl + p<br>22、显示相关插件的命令(如：git log)：ctrl + shift + p<br>23、选中文字：shift + left / right / up / down<br>24、折叠代码： ctrl + k + 0-9 (0是完全折叠)<br>25、展开代码： ctrl + k + j (完全展开代码)<br>26、删除行 ： ctrl + shift + k<br>27、快速切换主题：ctrl + k / ctrl + t<br>28、快速回到顶部 ： ctrl + home<br>29、快速回到底部 : ctrl + end<br>30、格式化选定代码 ：ctrl + k / ctrl +f<br>31、选中代码 ： shift + 鼠标左键<br>32、多行同时添加内容（光标） ：ctrl + alt + up/down<br>33、全局替换：ctrl + shift + h<br>34、当前文件替换：ctrl + h<br>35、打开最近打开的文件：ctrl + r<br>36、打开新的命令窗：ctrl + shift + c<br>二、vs code 的常用插件<br>1、Auto Rename Tag 修改html标签，自动帮你完成尾部闭合标签的同步修改，和webstorm一样。<br>2、Auto Close Tag 自动闭合HTML标签<br>4、Beautiful 格式化代码的工具<br>5、Dash Dash是MacOS的API文档浏览器和代码段管理器<br>6、Ejs Snippets ejs 代码提示<br>7、ESLint 检查javascript语法错误与提示<br>8、File Navigator 快速查找文件<br>9、Git History(git log)查看git log<br>10、Gulp Snippets 写gulp时用到，gulp语法提示。<br>11、HTML CSS Support  在HTML标签上写class智能提示当前项目所支持的样式<br>12、HTML Snippets 超级好用且初级的H5代码片段以及提示<br>13、Debug for Chrome让vs code映射chrome的debug功能，静态页面都可以用vscode来打断点调试、配饰稍微复杂一点<br>14、Document this Js的注释模板<br>15、jQuery Code Snippets jquery提示工具<br>16、Html2jade html模板转pug模板<br>17、JS-CSS-HTML Formatter 格式化<br>18、Npm intellisense require 时的包提示工具<br>19、Open in browser 打开默认浏览器<br>20、One Dark Theme 一个vs code的主题<br>21、Path Intellisense 自动路径补全、默认不带这个功能<br>22、Project Manager多个项目之间快速切换的工具<br>23、Pug(Jade) snippets pug语法提示<br>24、React Components 根据文件名创建反应组件代码。<br>25、React Native Tools reactNative工具类为React Native项目提供了开发环境。<br>26、Stylelintcss/sass代码审查<br>27、Typings auto installer 安装vscode 的代码提示依赖库，基于typtings的<br>28、View In Browser 默认浏览器查看HTML文件（快捷键Ctrl+F1可以修改）<br>29、Vscode-icons 让vscode资源目录加上图标、必备<br>30、VueHelper Vue2代码段（包括Vue2 api、vue-router2、vuex2）<br>31、Vue 2 Snippets vue必备vue代码提示<br>32、Vue-color vue语法高亮主题<br>33、Auto-Open Markdown Preview markdown文件自动开启预览<br>34、EverMonkey 印象笔记<br>35、atom one dark atom的一个高亮主题(个人推荐)<br>三、常用的电脑快捷键<br>1、ctrl + shift + delete 快速清除浏览器缓存<br>2、ctrl + alt + delete 快速进入任务管理器页面<br>3、window + L  快速锁定电脑<br>4、window + d  所有窗口最小化<br>5、 window + e  打开我的资源管理器(我的电脑)<br>6、 window + f  快速打开搜索窗口<br>7、 alt + tab快速查看打开的应用与窗口</p>
-]]></content>
-      <categories>
-        <category>快捷键</category>
-      </categories>
-      <tags>
-        <tag>vscode</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>新主题ayer和hexo官方文档</title>
-    <url>/2020/04/09/%E6%96%B0%E4%B8%BB%E9%A2%98ayer,%E4%BB%A5%E5%8F%8Ahexo%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2020/04/09/%E6%96%B0%E4%B8%BB%E9%A2%98ayer,%E4%BB%A5%E5%8F%8Ahexo%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/QSPAyZoFKpH4Yhv.png" alt="thumb-1920-764958.png"></p>
-<p>今天换了一个主题<u> ayer</u>  个人挺喜欢的 一天都在报错，解决问题中，感觉收获了好多，也养成喜欢看官方文档的好习惯</p>
-<p><em>hexo</em> 官方文档 ：<a href="https://wizardforcel.gitbooks.io/hexo-doc/content/9.html" target="_blank" rel="noopener">https://wizardforcel.gitbooks.io/hexo-doc/content/9.html</a></p>
-]]></content>
-      <categories>
-        <category>Dairy</category>
-      </categories>
-      <tags>
-        <tag>新主题</tag>
-        <tag>官方文档</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>博客解决图片插入问题</title>
-    <url>/2020/04/10/%E5%8D%9A%E5%AE%A2%E8%A7%A3%E5%86%B3%E5%9B%BE%E7%89%87%E6%8F%92%E5%85%A5%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2020/04/10/%E5%8D%9A%E5%AE%A2%E8%A7%A3%E5%86%B3%E5%9B%BE%E7%89%87%E6%8F%92%E5%85%A5%E9%97%AE%E9%A2%98/ZlvfAPthg15e7j2.jpg" alt="001831mieh92lluuvh0eli.jpg"></p>
-<p>首先  在_config.yml中设置<code>post_asset_folder</code>为<strong>true</strong>，其次在gitbash输入以下命令</p>
-<p><code>npm install hexo-asset-image --save</code> 但是下载了该插件在hexo3.0版本还是不可用</p>
-<p>在这里我推荐一种方法，也是我从csdn上找到的，亲测<a id="more"></a></p>
-<p>该方法是通过修改<code>hexo-asset-image</code>这个插件的源代码来实现的，找到路径<code>node_modules\hexo-asset-image\index.js</code>,替换其中的内容为：</p>
-<p>‘use strict’;<br>var cheerio = require(‘cheerio’);</p>
-<p>// <a href="http://stackoverflow.com/questions/14480345/how-to-get-the-nth-occurrence-in-a-string" target="_blank" rel="noopener">http://stackoverflow.com/questions/14480345/how-to-get-the-nth-occurrence-in-a-string</a><br>function getPosition(str, m, i) {<br>  return str.split(m, i).join(m).length;<br>}</p>
-<p>var version = String(hexo.version).split(‘.’);<br>hexo.extend.filter.register(‘after_post_render’, function(data){<br>  var config = hexo.config;<br>  if(config.post_asset_folder){<br>        var link = data.permalink;<br>    if(version.length &gt; 0 &amp;&amp; Number(version[0]) == 3)<br>       var beginPos = getPosition(link, ‘/‘, 1) + 1;<br>    else<br>       var beginPos = getPosition(link, ‘/‘, 3) + 1;<br>    // In hexo 3.1.1, the permalink of “about” page is like “…/about/index.html”.<br>    var endPos = link.lastIndexOf(‘/‘) + 1;<br>    link = link.substring(beginPos, endPos);</p>
-<pre><code>var toprocess = [&apos;excerpt&apos;, &apos;more&apos;, &apos;content&apos;];
-for(var i = 0; i &lt; toprocess.length; i++){
-  var key = toprocess[i];
-
-  var $ = cheerio.load(data[key], {
-    ignoreWhitespace: false,
-    xmlMode: false,
-    lowerCaseTags: false,
-    decodeEntities: false
-  });
-
-  $(&apos;img&apos;).each(function(){
-    if ($(this).attr(&apos;src&apos;)){
-        // For windows style path, we replace &apos;\&apos; to &apos;/&apos;.
-        var src = $(this).attr(&apos;src&apos;).replace(&apos;\\&apos;, &apos;/&apos;);
-        if(!/http[s]*.*|\/\/.*/.test(src) &amp;&amp;
-           !/^\s*\//.test(src)) {
-          // For &quot;about&quot; page, the first part of &quot;src&quot; can&apos;t be removed.
-          // In addition, to support multi-level local directory.
-          var linkArray = link.split(&apos;/&apos;).filter(function(elem){
-            return elem != &apos;&apos;;
-          });
-          var srcArray = src.split(&apos;/&apos;).filter(function(elem){
-            return elem != &apos;&apos; &amp;&amp; elem != &apos;.&apos;;
-          });
-          if(srcArray.length &gt; 1)
-            srcArray.shift();
-          src = srcArray.join(&apos;/&apos;);
-          $(this).attr(&apos;src&apos;, config.root + link + src);
-          console.info&amp;&amp;console.info(&quot;update link as:--&gt;&quot;+config.root + link + src);
-        }
-    }else{
-        console.info&amp;&amp;console.info(&quot;no src attr, skipped...&quot;);
-        console.info&amp;&amp;console.info($(this));
-    }
-  });
-  data[key] = $.html();
-}</code></pre><p>  }<br>});</p>
-]]></content>
-      <tags>
-        <tag>图片插入</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>新年第一篇博客（HTML5标签）</title>
     <url>/2020/01/25/%E6%96%B0%E5%B9%B4%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%EF%BC%88HTML5%E6%A0%87%E7%AD%BE%EF%BC%89/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2020/01/25/%E6%96%B0%E5%B9%B4%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%EF%BC%88HTML5%E6%A0%87%E7%AD%BE%EF%BC%89/V6l1COtTbR5rJEp.png" alt="你的名字.png"></p>
@@ -227,9 +214,22 @@ for(var i = 0; i &lt; toprocess.length; i++){
       </tags>
   </entry>
   <entry>
-    <title>测试</title>
-    <url>/2020/04/10/%E6%B5%8B%E8%AF%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="https://s1.ax1x.com/2020/04/10/G7Vvtg.jpg" alt="G7Vvtg.jpg"></p>
+    <title>Hello World</title>
+    <url>/2020/01/23/hello-world/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="https://i.loli.net/2020/04/10/21uOSDsGBZb7Ne3.jpg" alt="105111-1568602271007b.jpg"></p>
+<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>. <a id="more"></a></p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 ]]></content>
   </entry>
   <entry>
