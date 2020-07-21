@@ -40,28 +40,6 @@
   </entry>
   
   <entry>
-    <title>博客解决图片插入问题</title>
-    <link href="http://yoursite.com/2020/04/10/%E5%8D%9A%E5%AE%A2%E8%A7%A3%E5%86%B3%E5%9B%BE%E7%89%87%E6%8F%92%E5%85%A5%E9%97%AE%E9%A2%98/"/>
-    <id>http://yoursite.com/2020/04/10/%E5%8D%9A%E5%AE%A2%E8%A7%A3%E5%86%B3%E5%9B%BE%E7%89%87%E6%8F%92%E5%85%A5%E9%97%AE%E9%A2%98/</id>
-    <published>2020-04-10T09:23:17.000Z</published>
-    <updated>2020-04-10T14:49:24.490Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;/2020/04/10/%E5%8D%9A%E5%AE%A2%E8%A7%A3%E5%86%B3%E5%9B%BE%E7%89%87%E6%8F%92%E5%85%A5%E9%97%AE%E9%A2%98/ZlvfAPthg15e7j2.jpg&quot; alt=&quot;001831mieh92lluuvh0eli.jpg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;首先  在_config.yml中设置&lt;code&gt;post_asset_folder&lt;/code&gt;为&lt;strong&gt;true&lt;/strong&gt;，其次在gitbash输入以下命令&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;npm install hexo-asset-image --save&lt;/code&gt; 但是下载了该插件在hexo3.0版本还是不可用&lt;/p&gt;
-&lt;p&gt;在这里我推荐一种方法，也是我从csdn上找到的，亲测&lt;/p&gt;
-    
-    </summary>
-    
-    
-    
-      <category term="图片插入" scheme="http://yoursite.com/tags/%E5%9B%BE%E7%89%87%E6%8F%92%E5%85%A5/"/>
-    
-  </entry>
-  
-  <entry>
     <title>新主题ayer和hexo官方文档</title>
     <link href="http://yoursite.com/2020/04/09/%E6%96%B0%E4%B8%BB%E9%A2%98ayer,%E4%BB%A5%E5%8F%8Ahexo%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/"/>
     <id>http://yoursite.com/2020/04/09/%E6%96%B0%E4%B8%BB%E9%A2%98ayer,%E4%BB%A5%E5%8F%8Ahexo%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/</id>
